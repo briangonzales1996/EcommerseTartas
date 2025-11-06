@@ -1,26 +1,24 @@
-
-
-
-
-
-
-
 /* Importaciones de fuentes (si no las pones en HTML, usa @import aquí) */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 
 /* Reset y variables globales */
 :root {
-  --primary-color: #f8b4c4; /* Rosa pastel */
-  --secondary-color: #d4a574; /* Marrón chocolate */
-  --accent-color: #fff5e1; /* Crema suave */
-  --text-color: #4a4a4a; /* Gris oscuro */
-  --bg-color: #fefefe; /* Blanco suave */
+  --primary-color: #f8b4c4;
+  /* Rosa pastel */
+  --secondary-color: #d4a574;
+  /* Marrón chocolate */
+  --accent-color: #fff5e1;
+  /* Crema suave */
+  --text-color: #4a4a4a;
+  /* Gris oscuro */
+  --bg-color: #fefefe;
+  /* Blanco suave */
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --border-radius: 12px;
   --transition: all 0.3s ease;
   --font-sinze-h1-section: 2.9rem;
   --font-sinze-h2-section: 2.3rem;
-  --border-radius-button:5px;
+  --border-radius-button: 5px;
 }
 
 * {
@@ -30,58 +28,67 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif; /* Fuente moderna para texto */
+  font-family: 'Poppins', sans-serif;
+  /* Fuente moderna para texto */
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--bg-color);
-  overflow-x: hidden; /* Evita scroll horizontal */
-  
+  overflow-x: hidden;
+  /* Evita scroll horizontal */
+
 }
 
-h1, h2, h3 {
-  font-family: 'Dancing Script', cursive; /* Fuente elegante para títulos */
+h1,
+h2,
+h3 {
+  font-family: 'Dancing Script', cursive;
+  /* Fuente elegante para títulos */
   color: var(--primary-color);
 }
 
 .container {
-  
+
   margin: 0 auto;
   padding: 20px;
-  
+
 }
 
 /*Top header*/
-  .containerTopHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-top: 5px;
-    background-color: var(--primary-color);
-  }
-  .containerLogoText{
-    width: 120px;
-    
-  }
-  .logoText{
-    width: 100%;
-    height: 100%;
-    
-  }
-  .containerIcon{
-    width: 50px;
-    height: 50px;
-  }
-  .icon{
-    width: 100%;
-    height: 100%;
-  }
+.containerTopHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 5px;
+  background-color: var(--primary-color);
+}
+
+.containerLogoText {
+  width: 120px;
+
+}
+
+.logoText {
+  width: 100%;
+  height: 100%;
+
+}
+
+.containerIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+}
 
 
 /* Header */
 header {
   background-image: linear-gradient(135deg, var(--accent-color), var(--primary-color));
-  
+
   top: 0;
   z-index: 100;
   box-shadow: var(--shadow);
@@ -114,30 +121,32 @@ nav a:hover {
 /* Main content */
 main {
   min-height: 70vh;
-  
+
 }
 
 /* Home */
 
 .home-hero {
   text-align: center;
-  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../public//tortaFondo.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public//tortaFondo.jpeg");
   padding: 60px 20px;
   background-size: cover;
   box-shadow: var(--shadow);
   background-position: center;
   height: 75vh;
 }
+
 .home-container {
-  background-image: url("https://cdn0.matrimonios.cl/article/0492/3_2/1280/png/22940-portada-2020-08-05t100132-064.webp"),linear-gradient(135deg, var(--bg-color), var(--accent-color));
+  background-image: url("https://cdn0.matrimonios.cl/article/0492/3_2/1280/png/22940-portada-2020-08-05t100132-064.webp"), linear-gradient(135deg, var(--bg-color), var(--accent-color));
   background-size: cover;
-  
+
 }
+
 .home-hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  
-  
+
+
 }
 
 .home-hero p {
@@ -164,9 +173,10 @@ main {
 
 
 /* Products */
-.containerProducts{
+.containerProducts {
   max-width: 1200px;
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -214,9 +224,10 @@ main {
 }
 
 /* Contact */
-.container-contact{
+.container-contact {
   max-width: 1200px;
 }
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -233,7 +244,8 @@ form {
   max-width: 600px;
 }
 
-form input, form textarea {
+form input,
+form textarea {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
@@ -243,7 +255,8 @@ form input, form textarea {
   transition: var(--transition);
 }
 
-form input:focus, form textarea:focus {
+form input:focus,
+form textarea:focus {
   border-color: var(--primary-color);
   outline: none;
   box-shadow: 0 0 5px rgba(248, 180, 196, 0.5);
@@ -340,7 +353,8 @@ form button:hover {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-  color: #f36d94; /* Rosa fuerte */
+  color: #f36d94;
+  /* Rosa fuerte */
 }
 
 .card-underline {
@@ -364,6 +378,7 @@ form button:hover {
   .about-cards {
     gap: 1.5rem;
   }
+
   .about-card {
     width: 90%;
     max-width: 400px;
@@ -375,17 +390,21 @@ form button:hover {
   .about-title {
     font-size: 1.8rem;
   }
+
   .about-underline {
     width: 40px;
     height: 3px;
   }
+
   .card-title {
     font-size: 1.35rem;
   }
+
   .card-underline {
     width: 30px;
     height: 3px;
   }
+
   .card-text {
     font-size: 0.95rem;
   }
@@ -406,14 +425,19 @@ footer {
 }
 
 
+/*CSS COMPONENTE SERVICES*/
+
+
+
 /*CSS DE COMPONENTE PARA BOTON*/
-.container-button-general{
+.container-button-general {
   max-width: 320px;
   margin: auto;
   margin-top: 40px;
   border-radius: var(--border-radius-button);
 }
-.container-button-general>button{
+
+.container-button-general>button {
   cursor: pointer;
   background-color: var(--primary-color);
   border: none;
@@ -424,18 +448,19 @@ footer {
   transition: background-color .3s ease;
 }
 
-.container-button-general>button:hover{
+.container-button-general>button:hover {
   background-color: #333;
 }
 
 
 /*CSS DE COMPONENTE background title*/
-.container-background{
+.container-background {
   background-color: var(--primary-color);
   padding: 40px;
-  
+
 }
-.background-text{
+
+.background-text {
   color: var(--text-color);
   font-family: sans-serif;
   text-align: center;
@@ -443,71 +468,95 @@ footer {
 
 /*CSS DEL COMPONENTE CATEGORY iCONS*/
 
-.container-category-icons{
+.container-category-icons {
   max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-    text-align: center;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  animation: fadeInUp .9s linear both;
 }
 
-.container-category-icons-title{
+.container-category-icons-title {
   font-size: 2.9rem;
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.container-category-icons-text{
+
+.container-category-icons-text {
   font-size: 1rem;
-    max-width: 650;
-    margin: 0 auto 2rem;
-    line-height: 1.5;
-    color:var(--text-color);
+  max-width: 650;
+  margin: 0 auto 2rem;
+  line-height: 1.5;
+  color: var(--text-color);
 }
 
-.category-icons-grid{
+.category-icons-grid {
   display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 1.5rem;
-    justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
 }
 
-.category-icons-grid>article{
+.category-icons-grid>article {
   background-color: #f0f0f0;
-    border-radius: 12px;
-    padding: 2rem 1rem;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    cursor: pointer;
-    transition: transform 0.3s ease,box-shadow 0.3s ease;
-    outline: none;
+  border-radius: 12px;
+  padding: 2rem 1rem;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  
+  outline: none;
+
+
 }
-.category-icons-grid>article:hover, .category-icons-grid>article:focus {
+
+.category-icons-grid>article:hover,
+.category-icons-grid>article:focus {
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
   
 
 }
-.category-icons-grid>article>div:hover, .category-icons-grid>article>div:focus{
+
+.category-icons-grid>article>div:hover,
+.category-icons-grid>article>div:focus {
   transform: translateY(-10px);
 }
 
-.icons-wrapper{
+.icons-wrapper {
   color: #000;
   transition: transform 0.3s ease;
 }
 
-.category-icons-grid>article>h3{
+.category-icons-grid>article>h3 {
   font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color:var(--text-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
 }
 
-.icons-lineal{
+.icons-lineal {
   height: 3px;
-    width: 40px;
-    background-color: var(--primary-color);
-    margin: 0 auto;
-    border-radius: 2px;
+  width: 40px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  border-radius: 2px;
 }
+
+
+.item-a-animar {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+
+
+.item-a-animar.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 /*CSS DEL COMPONENTE FEATURE*/
 
 .acerca-section {
@@ -529,7 +578,8 @@ footer {
   margin: 0 auto 1.5rem auto;
   width: 50px;
   height: 3px;
-  background-color: var(--primary-color); /* rosa pastel */
+  background-color: var(--primary-color);
+  /* rosa pastel */
   border-radius: 2px;
 }
 
@@ -553,16 +603,17 @@ footer {
   padding: 2rem 1.5rem;
   border-radius: 8px;
   width: 300px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.valor-card:hover{
-  
-box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
+
+.valor-card:hover {
+
+  box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
   transform: translateY(-8px);
 }
 
@@ -576,7 +627,7 @@ box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
 .valor-underline {
   width: 40px;
   height: 3px;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   border-radius: 2px;
   margin-bottom: 1rem;
 }
@@ -595,6 +646,7 @@ box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
   .valores-container {
     gap: 1.5rem;
   }
+
   .valor-card {
     width: 80%;
     max-width: 350px;
@@ -605,9 +657,11 @@ box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
   .acerca-title {
     font-size: 1.5rem;
   }
+
   .acerca-description {
     font-size: 0.95rem;
   }
+
   .btn-mas-sobre {
     width: 90%;
   }
@@ -621,24 +675,24 @@ box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .container {
     padding: 15px;
   }
-  
+
   .home-hero h1 {
     font-size: 2rem;
   }
-  
+
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
   }
-  
+
   .contact-section {
     flex-direction: column;
   }
-  
+
   form {
     padding: 20px;
   }
@@ -648,11 +702,11 @@ box-shadow: 0 10px 25px rgb(248 180 196 / 0.6);
   .home-hero {
     padding: 40px 10px;
   }
-  
+
   .gallery {
     grid-template-columns: 1fr;
   }
-  
+
   .product-card {
     padding: 15px;
   }

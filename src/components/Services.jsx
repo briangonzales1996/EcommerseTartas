@@ -44,7 +44,7 @@ const serviciosData = [
 
 function Servicios() {
     return (
-        <section aria-label="Servicios de la tienda" style={styles.wrapper}>
+        <section aria-label="Servicios de la tienda"  style={styles.wrapper}>
             <div style={styles.container}>
                 {serviciosData.map(({ id, icon, text }) => (
                     <div key={id} style={styles.servicio}>

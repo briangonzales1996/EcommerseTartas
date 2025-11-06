@@ -1,6 +1,10 @@
 import React from 'react'
 import { Button } from './Button';
 
+const datos = {
+    
+}
+
 function Feature() {
     return (
         <section className="acerca-section">
@@ -13,6 +17,7 @@ function Feature() {
             </p>
 
             <div className="valores-container">
+
                 <article className="valor-card">
                     <h3 className="valor-title">Pasión</h3>
                     <div className="valor-underline" />
