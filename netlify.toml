@@ -1,0 +1,12 @@
+[build]
+  # Confirma el comando de construcción
+  command = "npm run build"
+  # Confirma el directorio de publicación
+  publish = "dist"
+
+# Configuración de redirección de Netlify
+# Esta es la regla crucial para React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
