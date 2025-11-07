@@ -45,7 +45,7 @@ function Feature() {
                 }
             </div>
 
-            <Button text={"MÁS SOBRE NOSOTROS"} />
+            <Button text={"MÁS SOBRE NOSOTROS"} url={"./acerca"} />
         </section>
     );
 }

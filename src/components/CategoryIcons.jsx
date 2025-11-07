@@ -148,7 +148,7 @@ function CategoryIcons() {
           
         ))}
       </div>
-      <Button text={"VER PASTELES"} />
+      <Button text={"VER PASTELES"} url={"/productos"}/>
     </section>
   );
 }

@@ -13,7 +13,7 @@ function Home() {
       <p >Descubre nuestras deliciosas tortas, perfectas para cualquier ocasión.</p>
       
       
-        <Button text={"RESERVAR AHORA"}/>
+        <Button text={"RESERVAR AHORA"} url={"./contacto"}/>
    
       
       

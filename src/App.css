@@ -658,6 +658,12 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .home-hero{
+    height: auto;
+  }
+  .home-hero p{
+     font-size: 2rem;
+  }
   .acerca-title {
     font-size: 1.5rem;
   }
