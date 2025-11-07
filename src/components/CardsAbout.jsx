@@ -1,5 +1,5 @@
 import React from 'react'
-import useOnScreen from '../hooks/UseOnScreen';
+import useOnScreen from '../hooks/useOnScreen';
 import { useState,useEffect } from 'react';
 
 export const CardsAbout = ({ data, index }) => {

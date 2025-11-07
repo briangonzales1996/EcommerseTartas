@@ -1,5 +1,5 @@
 import React, { use, useEffect, useState } from 'react';
-import useOnScreen from '../hooks/UseOnScreen';
+import useOnScreen from '../hooks/useOnScreen';
 import { Button } from './Button';
 const colorCategoryIcon = "#4a4a4a";
 const colorFondIcon = "#f0f0f0";
