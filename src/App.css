@@ -94,29 +94,137 @@ header {
   box-shadow: var(--shadow);
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  align-items: center;
+/* Estilos para Nav Desktop (igual al original, pero con clases específicas) */
+.nav-desktop ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: 600;
-  font-size: 1.1rem;
-  padding: 8px 16px;
-  border-radius: var(--border-radius);
-  transition: var(--transition);
+.nav-desktop a {
+    text-decoration: none;
+    color: var(--text-color, #333);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: var(--border-radius, 12px);
+    transition: var(--transition, all 0.3s ease);
 }
 
-nav a:hover {
-  background-color: var(--text-color);
-  color: white;
-  transform: translateY(-2px);
+.nav-desktop a:hover {
+    background-color: var(--secondary-color, #d4a574);
+    color: white;
+    transform: translateY(-2px);
 }
+
+/* Botón Hamburguesa (solo visible en móvil) */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger-btn span {
+    width: 25px;
+    height: 3px;
+    background: var(--text-color, #333);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+/* Overlay del Menú Móvil */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Menú Desplegable (desde la izquierda) */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Inicialmente oculto */
+    width: 250px;
+    height: 100vh;
+    background: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1001;
+}
+
+.mobile-menu-overlay .mobile-menu {
+    left: 0; /* Visible cuando abierto */
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px; /* Espacio para la cruz */
+}
+
+.mobile-menu li {
+    margin: 20px 0;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: var(--text-color, #333);
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+    color: var(--primary-color, #f8b4c4);
+}
+
+/* Botón de Cerrar (Cruz) */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-color, #333);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--primary-color, #f8b4c4);
+}
+
+
+/* Responsivo: Oculta desktop nav y muestra hamburguesa en móvil */
+@media (max-width: 768px) {
+    .nav-desktop {
+        display: none;
+    }
+    .hamburger-btn {
+        display: flex;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+
+
 
 /* Main content */
 main {
@@ -891,4 +999,9 @@ footer {
   
 }
 
+/* Animaciones menu*/
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
