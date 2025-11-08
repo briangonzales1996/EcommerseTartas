@@ -283,12 +283,19 @@ form button:hover {
   transform: translateY(-2px);
 }
 
+.container-contact>form{
+
+  margin-bottom: 20px;
+ 
+}
+
 .contact-info {
   text-align: center;
   background: var(--accent-color);
   padding: 20px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  
 }
 
 .map {
@@ -296,6 +303,7 @@ form button:hover {
   height: 300px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
+  margin-top: 20px;
 }
 
 
@@ -377,42 +385,6 @@ form button:hover {
   color: #555;
 }
 
-/* Responsivo */
-@media (max-width: 960px) {
-  .about-cards {
-    gap: 1.5rem;
-  }
-
-  .about-card {
-    width: 90%;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .about-title {
-    font-size: 1.8rem;
-  }
-
-  .about-underline {
-    width: 40px;
-    height: 3px;
-  }
-
-  .card-title {
-    font-size: 1.35rem;
-  }
-
-  .card-underline {
-    width: 30px;
-    height: 3px;
-  }
-
-  .card-text {
-    font-size: 0.95rem;
-  }
-}
 
 
 
@@ -429,7 +401,7 @@ footer {
 }
 
 
-/*CSS COMPONENTE SERVICES*/
+
 
 
 
@@ -521,10 +493,7 @@ footer {
 
 }
 
-.category-icons-grid>article>div:hover,
-.category-icons-grid>article>div:focus {
-  transform: translateY(-10px);
-}
+
 
 .icons-wrapper {
   color: #000;
@@ -644,38 +613,7 @@ footer {
 
 
 
-/* Responsive feature*/
 
-@media (max-width: 960px) {
-  .valores-container {
-    gap: 1.5rem;
-  }
-
-  .valor-card {
-    width: 80%;
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home-hero{
-    height: auto;
-  }
-  .home-hero p{
-     font-size: 2rem;
-  }
-  .acerca-title {
-    font-size: 1.5rem;
-  }
-
-  .acerca-description {
-    font-size: 0.95rem;
-  }
-
-  .btn-mas-sobre {
-    width: 90%;
-  }
-}
 
 
 /*CSS Modal Images*/
@@ -781,7 +719,7 @@ footer {
   text-align: center;
   cursor: pointer;
   z-index: 1600;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .modal-close:hover {
@@ -790,23 +728,7 @@ footer {
 
 
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .modal-arrow {
-    font-size: 2rem;
-    width: 40px;
-    height: 70px;
-  }
-  .modal-close {
-    font-size: 2rem;
-    width: 38px;
-    height: 38px;
-  }
-  .image-wrapper {
-    width: 90vw;
-    height: 60vh;
-  }
-}
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -814,6 +736,79 @@ footer {
 }
 
 
+
+
+@media (max-width: 480px) {
+  
+}
+
+
+/* Responsive feature*/
+
+@media (max-width: 960px) {
+  .valores-container {
+    gap: 1.5rem;
+  }
+
+  .valor-card {
+    width: 80%;
+    max-width: 350px;
+  }
+  /* Responsivo about card*/
+   .about-cards {
+    gap: 1.5rem;
+  }
+
+  .about-card {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero{
+    height: auto;
+  }
+  .home-hero p{
+     font-size: 2rem;
+  }
+  .acerca-title {
+    font-size: 1.5rem;
+  }
+
+  .acerca-description {
+    font-size: 0.95rem;
+  }
+
+  .btn-mas-sobre {
+    width: 90%;
+  }
+  /*about card section*/
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-underline {
+    width: 40px;
+    height: 3px;
+  }
+
+  .card-title {
+    font-size: 1.35rem;
+  }
+
+  .card-underline {
+    width: 30px;
+    height: 3px;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+
+
+}
 
 
 
@@ -846,7 +841,26 @@ footer {
   form {
     padding: 20px;
   }
+  /* Responsive tweaks modal */
+
+  .modal-arrow {
+    font-size: 2rem;
+    width: 40px;
+    height: 70px;
+  }
+  .modal-close {
+    font-size: 2rem;
+    width: 38px;
+    height: 38px;
+  }
+  .image-wrapper {
+    width: 90vw;
+    height: 60vh;
+  }
+
 }
+
+
 
 @media (max-width: 480px) {
   .home-hero {
@@ -857,9 +871,24 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .category-icons-grid{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .svg-icons{
+    width: 70px;
+    height: 70px;
+  }
+
   .product-card {
     padding: 15px;
   }
+
+  .category-icons-grid>article>h3{
+    font-size: 1.4rem;
+  }
+
+  
+  
 }
 
 

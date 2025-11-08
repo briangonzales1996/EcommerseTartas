@@ -8,7 +8,7 @@ function Contact() {
         <textarea placeholder="Mensaje" required></textarea>
         <button type="submit">Enviar</button>
       </form>
-      <p>Ubicación: Calle Ficticia 123, Ciudad</p>
+      <p>Ubicación: Calle Nicolas Sanchez, Ciudad</p>
       <p>Teléfono: +123 456 7890</p>
       <p>Redes: @eccomerse</p>
       {/* Mapa integrado (reemplaza con tu embed de Google Maps) */}
