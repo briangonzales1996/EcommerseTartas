@@ -1,12 +1,3 @@
-import ProductCard from '../components/ProductCard.jsx';
-import ImageModal from '../components/ImageModal.jsx';
-import { useState } from 'react';
-import { CategoryItems } from '../components/CategoryItems.jsx';
-
-
-
-
-
 
 
 
@@ -27,41 +18,3 @@ const products = [
 ];
 
 
-
-
-const images = products.map(item=>item.image);
-
-
-function Products() {
-    const [modalOpen, setModalOpen] = useState(false);
-    const [startIndex, setStartIndex] = useState(0);
-
-    const openModalAt = (index) => {
-        setStartIndex(index);
-        setModalOpen(true);
-    };
-
-
-    return (
-        <>  
-            <div className="container containerProducts">
-                <CategoryItems/>
-                <h1>Nuestros Productos</h1>
-                <div className="gallery">
-                    {products.map((product,index) => (
-                        <ProductCard key={product.id} product={product} openModalAt={openModalAt} i={index} />
-                    ))}
-                </div>
-            </div>
-            <ImageModal
-                images={images}
-                isOpen={modalOpen}
-                initialIndex={startIndex}
-                onClose={() => setModalOpen(false)}
-            />
-        </>
-
-
-    );
-}
-export default Products;
