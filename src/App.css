@@ -114,7 +114,7 @@ header {
 }
 
 .nav-desktop a:hover {
-    background-color: var(--secondary-color, #d4a574);
+    background-color: var(--text-color);
     color: white;
     transform: translateY(-2px);
 }
@@ -721,6 +721,120 @@ footer {
 
 
 
+/*CSS categorias items filter*/
+.category-filter-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  background-color: #262626; /* fondo oscuro */
+  padding: 12px;
+  border-radius: 12px;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #333333;
+  border: 1.5px solid transparent;
+  border-radius: 16px;
+  padding: 8px 14px;
+  color: white;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.15s ease;
+}
+
+.category-btn:hover,
+.category-btn:focus {
+  background-color: #404040;
+  border-color: #f8b4c4;
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background-color: #f8b4c4; /* rosa pastel */
+  color: #262626; /* texto oscuro */
+  border-color: #f8b4c4;
+  font-weight: 700;
+  filter: drop-shadow(0 0 5px #f8b4c4);
+  transform: translateY(-2px);
+}
+
+.ver-todo {
+  border: 1.5px solid white;
+  background-color: transparent;
+  font-weight: 400;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.ver-todo.active {
+  background-color: #f8b4c4;
+  color: #262626;
+  border-color: #f8b4c4;
+  font-weight: 700;
+  filter: drop-shadow(0 0 5px #f8b4c4);
+  transform: translateY(-2px);
+}
+
+.category-icon-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  object-fit: cover;
+  user-select: none;
+}
+
+.category-icon-symbol {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Scroll suave para horizontal */
+.category-filter-container::-webkit-scrollbar {
+  height: 6px;
+}
+.category-filter-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.category-filter-container::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-radius: 3px;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .category-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+  .category-icon-img {
+    width: 22px;
+    height: 22px;
+  }
+  .category-icon-symbol {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
 
 
 
@@ -838,6 +952,8 @@ footer {
 
 
 
+
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -892,6 +1008,9 @@ footer {
   .btn-mas-sobre {
     width: 90%;
   }
+
+
+
   /*about card section*/
   .about-title {
     font-size: 1.8rem;

@@ -7,7 +7,7 @@ const colorFondIcon = "#f0f0f0";
 const categorias = [
   {
     id: 1,
-    nombre: 'Desayunos',
+    nombre: 'Cumpleaños',
     icon: (
       <svg className='svg-icons' width="100" height="100" fill={colorFondIcon} stroke={colorCategoryIcon} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" viewBox="0 0 24 24">
         <path d="M3 7h18M4 7V4h4v3M4 7h16l-2 11H6L4 7z" />
@@ -17,7 +17,7 @@ const categorias = [
   },
   {
     id: 2,
-    nombre: 'Salados',
+    nombre: 'Bodas',
     icon: (
       <svg className='svg-icons' width="100" height="100" fill={colorFondIcon} stroke={colorCategoryIcon} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" viewBox="0 0 24 24">
         <path d="M4 6h16M4 10h16M4 14h16M4 18h16" />
@@ -26,7 +26,7 @@ const categorias = [
   },
   {
     id: 3,
-    nombre: 'Bollería',
+    nombre: 'Bautismos',
     icon: (
       <svg className='svg-icons' width="100" height="100" fill={colorFondIcon} stroke={colorCategoryIcon} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" viewBox="0 0 24 24">
         <circle cx="12" cy="12" r="10" />
@@ -36,7 +36,7 @@ const categorias = [
   },
   {
     id: 4,
-    nombre: 'Bombonería',
+    nombre: 'Aniversarios',
     icon: (
       <svg className='svg-icons' width="100" height="100" fill={colorFondIcon} stroke={colorCategoryIcon} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" viewBox="0 0 24 24">
         <path d="M12 21s-6-4.35-6-10a6 6 0 0 1 12 0c0 5.65-6 10-6 10z" />
@@ -46,7 +46,7 @@ const categorias = [
   },
   {
     id: 5,
-    nombre: 'Especialidades',
+    nombre: 'Mis 15 años',
     icon: (
       <svg className='svg-icons' width="100" height="100" fill={colorFondIcon} stroke={colorCategoryIcon} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" viewBox="0 0 24 24">
         <polygon points="12 2 15 8 22 9 17 14 18 21 12 18 6 21 7 14 2 9 9 8 12 2" />
@@ -55,7 +55,7 @@ const categorias = [
   },
   {
     id: 6,
-    nombre: 'Tartas y postres',
+    nombre: 'Festivos',
     icon: (
       <svg className='svg-icons' width="100" height="100" fill={colorFondIcon} stroke={colorCategoryIcon} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" viewBox="0 0 24 24">
         <path d="M21 12c0 2.21-1.79 4-4 4H7c-2.21 0-4-1.79-4-4 0-1.37.77-2.54 1.9-3.18M12 3v3m0 10v3m0-6a3 3 0 0 0 3-3H9a3 3 0 0 0 3 3z" />
