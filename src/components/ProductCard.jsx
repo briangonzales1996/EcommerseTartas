@@ -10,7 +10,7 @@ function ProductCard({ product,openModalAt,i }) {
 
       <div className="product-card">
         <img
-          src={product.image}
+          src={`../..${product.image}`}
           alt={product.name}
           onClick={() => openModalAt(i)}
           loading="lazy"

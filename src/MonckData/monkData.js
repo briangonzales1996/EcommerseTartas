@@ -1,17 +1,18 @@
 import React from "react";
 
 const products = [
-    { id: 1, name: 'Bautismo Dorada', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/bautismo-dorado.jpeg' },
-    { id: 2, name: 'Bautismo Celesete', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/bautismo-celeste.jpeg' },
-    { id: 3, name: 'Bautismo Rosa', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/bautismo-rosa.jpeg' },
-    { id: 5, name: 'Boda Salmon', category: "boda", description: 'Personalizada para eventos', image: '../../public/boda-salmon.jpeg' },
-    { id: 6, name: 'Boda para 200 personas', category: "boda", description: 'Personalizada para eventos', image: '../../public/boda-200-persona.jpeg' },
-    { id: 7, name: 'Aniversario celeste', category: "aniversario", description: 'Tarta para 200 persones para aniversario o boda', image: '../../public/celeste-7-tortas.jpeg' },
-    { id: 8, name: 'Bautismo de Mickey', description: 'Tarta Personalizada para 150 personas', image: '../../public/bautismo-mickey.jpeg' },
-    { id: 9, name: 'Tortas figura cuadrada', category: "aniversario", description: 'Personalizada para eventos', image: '../../public/bautismo-cuadrados.jpeg' },
-    { id: 10, name: 'Familiar 2 pisos', category: "cumpleaños", description: 'Tarta de 2 pisos para 50 personas', image: '../../public/familiar-2pisos.jpeg' },
-    { id: 11, name: 'Tarta Personalizada Boca', category: "cumpleaños", description: 'Tarta personalizada para 30 personas', image: '../../public/boca-escudo.jpeg' },
-    { id: 12, name: 'Tarta Personalizada Bolivar', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/bolivar-escudo.jpeg' },
+    { id: 1, name: 'Bautismo Dorada', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-dorado.jpeg' },
+    { id: 2, name: 'Bautismo Celesete', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-celeste.jpeg' },
+    { id: 3, name: 'Bautismo Rosa', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-rosa.jpeg' },
+    { id: 4, name: 'Boda Salmon', category: "boda", description: 'Personalizada para eventos', image: '../../public/tartas/boda-salmon.jpeg' },
+    { id: 5, name: 'Boda para 200 personas', category: "boda", description: 'Personalizada para eventos', image: '../../public/tartas/boda-200-persona.jpeg' },
+    { id: 6, name: 'Aniversario celeste', category: "aniversario", description: 'Tarta para 200 persones para aniversario o boda', image: '../../public/tartas/celeste-7-tortas.jpeg' },
+    { id: 7, name: 'Bautismo de Mickey', description: 'Tarta Personalizada para 150 personas', image: '../../public/tartas/bautismo-mickey.jpeg' },
+    { id: 8, name: 'Tortas figura cuadrada', category: "aniversario", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-cuadrados.jpeg' },
+    { id: 9, name: 'Familiar 2 pisos', category: "cumpleaños", description: 'Tarta de 2 pisos para 50 personas', image: '../../public/tartas/familiar-2pisos.jpeg' },
+    { id: 10, name: 'Tarta Personalizada Boca', category: "cumpleaños", description: 'Tarta personalizada para 30 personas', image: '../../public/tartas/boca-escudo.jpeg' },
+    { id: 11, name: 'Tarta Personalizada Bolivar', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 12, name: 'Tarta de Boda Rosa', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
 
     // Agrega más productos aquí
 ];
@@ -66,20 +67,29 @@ export const  orderImage = async () => {
                 
                 // 1. Obtener el nombre del archivo (con la extensión) -> "10-bolivar-escudo.jpeg"
                 const nombreConExtension =  images[i].split('/').pop();
+
                 // 2. Obtener el nombre sin la extensión -> "10-bolivar-escudo"
                 const numberImage = nombreConExtension.split('.')[0];
+                
+                
                 if (item.id == numberImage.slice(0, 1)) {
+                    
+                    item.image = images[i]
+                    
+                    return item
+                }
+                else if(item.id == numberImage.slice(0,2)){
                     item.image = images[i]
                     
                     return item
                 }
             }
         }
-        return item
+        
 
     })
-    
-   
+        
+ 
     
     return newProducts
 

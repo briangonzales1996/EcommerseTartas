@@ -47,7 +47,7 @@ function ImageModal({ images = [], isOpen, initialIndex = 0, onClose }) {
                     {images.map((img, idx) => (
                         <img
                             key={idx}
-                            src={img}
+                            src={`../..${img}`}
                             alt={`Imagen ${idx + 1}`}
                             className={`modal-image ${idx === currentIndex ? 'active' : ''}`}
                             loading="lazy"
