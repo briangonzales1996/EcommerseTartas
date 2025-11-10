@@ -3,7 +3,7 @@ import ImageModal from '../components/ImageModal.jsx';
 import { useEffect, useState } from 'react';
 import { CategoryItems } from '../components/CategoryItems.jsx';
 
-import { orderImage } from '../MonckData/MonkData.js';
+import { orderImage } from '../MonckData/MonckData.js';
 //console.log(newProducts)
 
 
