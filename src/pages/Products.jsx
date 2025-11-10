@@ -45,7 +45,7 @@ function Products() {
     
        
             
-            images = data && data.map(item =>item );
+        images = data && data.map(item =>item.image);
         
         
     
