@@ -9,7 +9,7 @@
   /* Marrón chocolate */
   --accent-color: #fff5e1;
   /* Crema suave */
-  --text-color: #4a4a4a;
+  --text-color: #262626;
   /* Gris oscuro */
   --bg-color: #fefefe;
   /* Blanco suave */
@@ -60,11 +60,11 @@ h3 {
   align-items: center;
   gap: 10px;
   padding-top: 5px;
-  background-color: var(--primary-color);
+  background-color: var(--bg-color);
 }
 
 .containerLogoText {
-  width: 120px;
+  width: 90px;
 
 }
 
@@ -84,10 +84,18 @@ h3 {
   height: 100%;
 }
 
+.containerCaligrafia{
+  width: 230px;
+}
+.containerCaligrafia>img{
+  width: 100%;
+  height: 100%;
+}
+
 
 /* Header */
 header {
-  background-image: linear-gradient(135deg, var(--accent-color), var(--primary-color));
+  background-image: linear-gradient(135deg, var(--text-color));
 
   top: 0;
   z-index: 100;
@@ -105,7 +113,7 @@ header {
 
 .nav-desktop a {
     text-decoration: none;
-    color: var(--text-color, #333);
+    color: var(--bg-color, #333);
     font-weight: 600;
     font-size: 1.1rem;
     padding: 8px 16px;
@@ -114,8 +122,8 @@ header {
 }
 
 .nav-desktop a:hover {
-    background-color: var(--text-color);
-    color: white;
+    
+    color: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -325,6 +333,7 @@ main {
 
 .product-card h3 {
   margin: 15px 0 10px;
+  font-family: sans-serif;
   font-size: 1.5rem;
 }
 
@@ -740,7 +749,7 @@ footer {
   gap: 8px;
   background-color: #333333;
   border: 1.5px solid transparent;
-  border-radius: 16px;
+  border-radius: 10px;
   padding: 8px 14px;
   color: white;
   font-weight: 600;
