@@ -1,4 +1,5 @@
 import { Button } from "../components/Button";
+import CarouselImage from "../components/CarouselImage";
 import CategoryIcons from "../components/CategoryIcons";
 import Feature from "../components/Feature";
 import Servicios from "../components/Services";
@@ -20,6 +21,7 @@ function Home() {
     </div>
     <Servicios/>
     <CategoryIcons/>
+    <CarouselImage/>
     <Titlebackground/>
     <Feature/>
     </>

@@ -35,7 +35,7 @@ body {
   background-color: var(--bg-color);
   overflow-x: hidden;
   /* Evita scroll horizontal */
-  
+
 }
 
 h1,
@@ -139,9 +139,9 @@ header {
   z-index: 1001;
   animation: scrollMenu linear forwards;
   scroll-timeline: scrollWith block;
-  animation-timeline:  scroll();
+  animation-timeline: scroll();
   animation-range: 10px 100px;
-  
+
 
 }
 
@@ -151,6 +151,11 @@ header {
   background: var(--text-color, #333);
   margin: 3px 0;
   transition: 0.3s;
+
+  animation: scrollMenuLine linear forwards;
+  scroll-timeline: scrollWith block;
+  animation-timeline: scroll();
+  animation-range: 10px 100px;
 }
 
 /* Overlay del Menú Móvil */
@@ -656,6 +661,121 @@ footer {
   transform: translateY(0);
 }
 
+/*CSS DE CAROUSEL*/
+
+.carousel-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  user-select: none;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide {
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+ 
+}
+
+.carousel-image {
+  width: 100%;
+  max-height: 650px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(248, 180, 196, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.slide-text {
+  margin-top: 1rem;
+  color: #4a4a4a;
+}
+
+.slide-text h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  color: #f8b4c4;
+}
+
+.slide-text p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Flechas */
+.arrow {
+  background-color: rgba(248, 180, 196, 0.7);
+  border: none;
+  border-radius: 50%;
+  color: #262626;
+  cursor: pointer;
+  font-size: 2.5rem;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+  user-select: none;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background-color: #f8b4c4;
+  color: white;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Dots */
+.dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 14px;
+  width: 14px;
+  margin: 0 7px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #f8b4c4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {}
+
+
+
 
 
 /*CSS DEL COMPONENTE FEATURE*/
@@ -981,9 +1101,6 @@ footer {
 }
 
 @media (max-width: 480px) {
-  
-
-
 
   /*about card section*/
   .about-title {
@@ -1008,7 +1125,6 @@ footer {
     font-size: 0.95rem;
   }
 
-
 }
 
 
@@ -1030,6 +1146,28 @@ footer {
     font-size: 2rem;
   }
 
+  /*css responsive de carrousel imanges*/
+  .carousel-image {
+    max-height: 300px;
+    border-radius: 10px;
+  }
+
+  .arrow {
+    height: 40px;
+    width: 40px;
+    font-size: 2rem;
+  }
+
+  .slide-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .slide-text p {
+    font-size: 0.9rem;
+    max-width: 90vw;
+  }
+
+  /*css modal imagenes*/
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
@@ -1070,16 +1208,15 @@ footer {
 
   /*css movil header*/
   .containerLogoText {
-    width: 90px;
+    width: 65px;
 
   }
+
 
   .containerIcon {
     width: 30px;
     height: 30px;
   }
-
- 
 
   .containerCaligrafia {
     width: 170px;
@@ -1093,6 +1230,17 @@ footer {
 
   .home-hero p {
     font-size: 2rem;
+  }
+
+  /*Css carousel responsive*/
+  .carousel-container {
+    padding: 0 10px;
+  }
+
+  .arrow {
+    height: 36px;
+    width: 36px;
+    font-size: 1.6rem;
   }
 
   /*css movil del feature.jsx*/
@@ -1164,16 +1312,23 @@ footer {
 
 @keyframes scrollMenu {
 
-  from { 
-    
-    
-  }
-  to { 
+  from {}
+
+  to {
     width: 100%;
     top: 0;
     right: 0;
-    background-color: var(--primary-color);
+    background-color: var(--text-color);
     z-index: 1;
     padding: 15px;
+  }
+}
+
+@keyframes scrollMenuLine {
+
+  from {}
+
+  to {
+    background-color: var(--bg-color);
   }
 }
