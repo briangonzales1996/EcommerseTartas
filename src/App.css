@@ -682,7 +682,7 @@ footer {
   text-align: center;
   max-width: 100%;
   width: 100%;
- 
+
 }
 
 .carousel-image {
@@ -843,6 +843,7 @@ footer {
   font-weight: 700;
   font-size: var(--font-sinze-h2-section);
   margin-bottom: 0.25rem;
+
 }
 
 .valor-underline {
@@ -1232,6 +1233,12 @@ footer {
     font-size: 2rem;
   }
 
+  /*css Category icons responsive*/
+  .container-category-icons-title {
+    font-size: 2.2rem;
+
+  }
+
   /*Css carousel responsive*/
   .carousel-container {
     padding: 0 10px;
@@ -1245,7 +1252,7 @@ footer {
 
   /*css movil del feature.jsx*/
   .acerca-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .acerca-description {
@@ -1261,6 +1268,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /*css resposive category icons*/
   .category-icons-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
@@ -1278,57 +1286,61 @@ footer {
     font-size: 1.4rem;
   }
 
-
-  /*CSS MOVIL DE CATEGORIAS PRODCUTS DE IMAGENES*/
-  .category-btn {
-    padding: 6px 10px;
-    font-size: 0.8rem;
-    gap: 6px;
+  /*css movil fature*/
+  .valor-title {
+    font-size: 2rem;
   }
 
-  .category-icon-img {
-    width: 22px;
-    height: 22px;
+    /*CSS MOVIL DE CATEGORIAS PRODCUTS DE IMAGENES*/
+    .category-btn {
+      padding: 6px 10px;
+      font-size: 0.8rem;
+      gap: 6px;
+    }
+
+    .category-icon-img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .category-icon-symbol {
+      font-size: 1rem;
+    }
+
+
+
   }
 
-  .category-icon-symbol {
-    font-size: 1rem;
+  /* Animaciones menu*/
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
+  @keyframes scrollMenu {
 
+    from {}
 
-}
-
-/* Animaciones menu*/
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+    to {
+      width: 100%;
+      top: 0;
+      right: 0;
+      background-color: var(--text-color);
+      z-index: 1;
+      padding: 15px;
+    }
   }
 
-  to {
-    opacity: 1;
+  @keyframes scrollMenuLine {
+
+    from {}
+
+    to {
+      background-color: var(--bg-color);
+    }
   }
-}
-
-@keyframes scrollMenu {
-
-  from {}
-
-  to {
-    width: 100%;
-    top: 0;
-    right: 0;
-    background-color: var(--text-color);
-    z-index: 1;
-    padding: 15px;
-  }
-}
-
-@keyframes scrollMenuLine {
-
-  from {}
-
-  to {
-    background-color: var(--bg-color);
-  }
-}
