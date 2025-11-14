@@ -648,6 +648,10 @@ footer {
   border-radius: 2px;
 }
 
+.svg-icons>p{
+  font-size: 80px;
+}
+
 
 .item-a-animar {
   opacity: 0;
@@ -771,8 +775,7 @@ footer {
   background-color: #f8b4c4;
 }
 
-/* Responsive */
-@media (max-width: 768px) {}
+
 
 
 
@@ -1274,8 +1277,11 @@ footer {
   }
 
   .svg-icons {
-    width: 70px;
-    height: 70px;
+    font-size: 50px;
+  }
+  
+  .svg-icons>p {
+    font-size: 50px;
   }
 
   .product-card {
