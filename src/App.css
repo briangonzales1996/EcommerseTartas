@@ -1210,6 +1210,13 @@ footer {
 
 @media (max-width: 480px) {
 
+  .containerTopHeader{
+    gap: 50px;
+    justify-content: flex-start;
+  }
+  .containerTopHeader>.containerLogoText{
+    padding-left: 15px;
+  }
   /*css movil header*/
   .containerLogoText {
     width: 65px;
