@@ -32,7 +32,7 @@ function CarouselImage() {
 
 
     useEffect(() => {
-         if (data.length > 0) {
+        if (data.length > 0) {
             const id = setInterval(() => {
                 nextSlide()
             }, 4000)
@@ -42,9 +42,9 @@ function CarouselImage() {
             }
         }
         getData();
-       
 
-    }, [data.length,nextSlide])
+
+    }, [data.length, nextSlide])
 
 
 
@@ -61,17 +61,26 @@ function CarouselImage() {
             <div className="carousel-container">
                 <div className="carousel">
                     <button className="arrow left-arrow" onClick={prevSlide} aria-label="Imagen anterior">&#10094;</button>
-                    <div className="slide">
-                        <img
-                            src={data[currentIndex].image}
-                            alt={data[currentIndex].title}
-                            className="carousel-image"
-                        />
-                        <div className="slide-text">
-                            <h3>{data[currentIndex].title}</h3>
-                            <p>{data[currentIndex].description}</p>
-                        </div>
+
+
+                    <div className="slides" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+                        {data.map((item) => (
+                            <div key={item.id} className="slide">
+                                <img
+                                    src={item.image}
+                                    alt={item.title}
+                                    className="carousel-image"
+                                />
+                                <div className="slide-text">
+                                    <h3>{item.title}</h3>
+                                    <p>{item.description}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
+
+
+
                     <button className="arrow right-arrow" onClick={nextSlide} aria-label="Siguiente imagen">&#10095;</button>
                 </div>
                 <div className="dots">

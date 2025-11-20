@@ -21,6 +21,7 @@ function Products() {
     const [modalOpen, setModalOpen] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
     const [data, setData] = useState([]);
+    const [selectCategory,setSelectCategory] = useState('')
     let  images =[]
 
 
@@ -31,17 +32,32 @@ function Products() {
         setModalOpen(true);
     };
 
+    const getCategoryProduct  = (category) =>{
+        
+        
+        setSelectCategory(category)
+        
+    }
+
 
     useEffect(() => {
 
         const getImages = async () => {
+
             const dataProduct = await orderImage()
-            setData(dataProduct)
+            if(selectCategory==''){
+                setData(dataProduct)
+            }
+            else{
+                const  newData = dataProduct.filter(item=>item.category==selectCategory);
+                setData(newData)
+            }
+            
             
         }
         
         getImages();
-    }, [])
+    }, [selectCategory])
     
        
             
@@ -54,8 +70,8 @@ function Products() {
     return (
         <>
             <div className="container containerProducts">
-                <CategoryItems />
-                <h1>Nuestros Productos</h1>
+                <CategoryItems setCategory={getCategoryProduct}/>
+                
                 <div className="gallery">
                     {data && data.map((product, index) => (
                         <ProductCard key={product.id} product={product} openModalAt={openModalAt} i={index} />

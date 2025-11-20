@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from './Button';
 import { CardsAbout } from './CardsAbout';
+import TitleAnimation from './TitleAnimation';
 
 const datos = [
     {
@@ -27,15 +28,18 @@ const datos = [
 
 
 function Feature() {
+    const data = {
+        title:"Bienvenido a Pastelería Mary",
+        text:(<p className="acerca-description">
+                Un concepto romántico de gastronomía delicada y deliciosa, para el deleite de los cinco sentidos. Nuestros valores reflejan el alma y la personalidad de nuestra Casa.
+            </p>)
+    }
     return (
         <section className="acerca-section">
-            <h2 className="acerca-title">
-                Bienvenido a <strong>Pastelería Mary</strong>
-            </h2>
-            <div className="acerca-underline" />
-            <p className="acerca-description">
-                Un concepto romántico de gastronomía delicada y deliciosa, para el deleite de los cinco sentidos. Nuestros valores reflejan el alma y la personalidad de nuestra Casa.
-            </p>
+
+            <TitleAnimation data={data}/>
+           
+           
 
             <div className="valores-container">
                 {

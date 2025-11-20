@@ -1,6 +1,7 @@
 import React, { use, useEffect, useState } from 'react';
 import useOnScreen from '../hooks/useOnScreen';
 import { Button } from './Button';
+import TitleAnimation from './TitleAnimation';
 const colorCategoryIcon = "#4a4a4a";
 const colorFondIcon = "#f0f0f0";
 
@@ -131,13 +132,17 @@ const CategoryItem = ({ nombre, index,icon }) => {
 
 
 function CategoryIcons() {
-
+  const data = {
+    title:"Pastelería y Confitería en Madrid",
+    text:(<p className='container-category-icons-text' >
+        En <strong>Pastelería Mary</strong> apostamos por hacer cada vez más accesible nuestra pastelería a todo aquel que quiera tener un pedacito de nosotros. Puedes hacer tu <strong>pedido online</strong>, con <strong>envío a domicilio</strong> o para <strong>recoger en tienda</strong>, de lunes a domingo.
+      </p>)
+  }
   return (
     <section aria-label="Categorías de productos" className='container-category-icons'>
-      <h2 className='container-category-icons-title'>Pastelería y Confitería en Madrid <strong>La Mallorquina</strong></h2>
-      <p className='container-category-icons-text' >
-        En <strong>La Mallorquina</strong> apostamos por hacer cada vez más accesible nuestra pastelería a todo aquel que quiera tener un pedacito de nosotros. Puedes hacer tu <strong>pedido online</strong>, con <strong>envío a domicilio</strong> o para <strong>recoger en tienda</strong>, de lunes a domingo.
-      </p>
+      <TitleAnimation data={data}/>
+      
+      
       <div className='category-icons-grid'>
         {categorias.map(({ id, nombre, icon },index) => (
 

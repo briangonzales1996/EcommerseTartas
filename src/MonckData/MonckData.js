@@ -12,7 +12,12 @@ const products = [
     { id: 9, name: 'Familiar 2 pisos', category: "cumpleaños", description: 'Tarta de 2 pisos para 50 personas', image: '../../public/tartas/familiar-2pisos.jpeg' },
     { id: 10, name: 'Tarta Personalizada Boca', category: "cumpleaños", description: 'Tarta personalizada para 30 personas', image: '../../public/tartas/boca-escudo.jpeg' },
     { id: 11, name: 'Tarta Personalizada Bolivar', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
-    { id: 12, name: 'Tarta de Boda Rosa', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 12, name: 'Tarta de Boda Rosa', category: "boda", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 13, name: 'Tarta de Boda Blanca', category: "boda", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 14, name: 'Tarta Plateada', category: "aniversario", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 15, name: 'Tarta de Bautismo Rosa', category: "bautismo", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 16, name: 'Tarta de Bautismo Verde', category: "bautismo", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 17, name: 'Tarta para Mis 15', category: "15años", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
 
     // Agrega más productos aquí
 ];
