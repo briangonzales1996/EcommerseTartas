@@ -1,3 +1,6 @@
+import what from '../../public/icons-whatsapp.gif'
+import gps from '../../public/icons-gps.png'
+import face from '../../public/icons-facebook.png'
 function Contact() {
   const urlNumber = 'https://wa.me/34611523675'
   return (
@@ -9,9 +12,9 @@ function Contact() {
         <textarea placeholder="Mensaje" required></textarea>
         <button type="submit">Enviar</button>
       </form>
-      <p>Ubicación: Calle Nicolas Sanchez, Ciudad</p>
-      <p>Teléfono: <a href={urlNumber}>+34611523675</a></p>
-      <p>Redes: @eccomerse</p>
+      <p><img src={gps}/>Ubicación: Calle Nicolas Sanchez, Ciudad</p>
+      <p><a href={urlNumber}><img src={what}></img></a> <a href={urlNumber}>+34611523675</a></p>
+      <p><img src={face}/> @eccomerse</p>
       {/* Mapa integrado (reemplaza con tu embed de Google Maps) */}
       <iframe
         className="map"

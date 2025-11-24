@@ -56,16 +56,15 @@ h3 {
 /*Top header*/
 .containerTopHeader {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  
   gap: 10px;
-  padding-top: 5px;
-  background-color: var(--bg-color);
+  
+  
 }
 
 .containerLogoText {
-  width: 90px;
-
+  width: 70px;
+height: 80px;
 }
 
 .logoText {
@@ -75,8 +74,8 @@ h3 {
 }
 
 .containerIcon {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon {
@@ -86,11 +85,16 @@ h3 {
 
 .containerCaligrafia {
   width: 230px;
+  
 }
 
 .containerCaligrafia>img {
   width: 100%;
   height: 100%;
+}
+
+.containerTopHeader-boolean{
+  display: none;
 }
 
 
@@ -104,20 +108,29 @@ header {
 }
 
 /* Estilos para Nav Desktop (igual al original, pero con clases específicas) */
+.nav-desktop{
+  display: flex;
+  padding: 5px 20px ;
+  
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  
+}
 .nav-desktop ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
   align-items: center;
+  
 }
 
 .nav-desktop a {
   text-decoration: none;
-  color: var(--bg-color, #333);
+  color: var(--text-color, #333);
   font-weight: 600;
   font-size: 1.1rem;
-  padding: 8px 16px;
+  
   border-radius: var(--border-radius, 12px);
   transition: var(--transition, all 0.3s ease);
 }
@@ -403,7 +416,7 @@ form {
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 form input,
@@ -464,7 +477,16 @@ form button:hover {
   margin-top: 20px;
 }
 
-
+.container-contact>p{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+.container-contact>p>img,.container-contact>p>a>img{
+  width: 40px;
+  height: 40px;
+}
 
 /* About */
 .about-section {
@@ -1041,22 +1063,8 @@ footer {
 
 
 
-/* Responsivo text marquet text infinito */
-@media (max-width: 768px) {
-  .marquee-text {
-    font-size: 1rem;
-  }
-  .marquee-container {
-    padding: 8px 0;
-  }
-}
 
-@media (max-width: 480px) {
-  .marquee-text {
-    font-size: 0.9rem;
-    margin-right: 30px;
-  }
-}
+
 
 
 /*CSS Modal Images*/
@@ -1240,6 +1248,15 @@ footer {
   .home-hero h1 {
     font-size: 2rem;
   }
+  
+/* Responsivo text marquet text infinito */
+  .marquee-text {
+    font-size: 1rem;
+  }
+  .marquee-container {
+    padding: 8px 0;
+  }
+
 
   /*css responsive de carrousel imanges*/
   .carousel-image {
@@ -1304,11 +1321,21 @@ footer {
   .containerTopHeader {
     gap: 50px;
     justify-content: flex-start;
+    background-color: var(--bg-color);
+    padding: 10px;
   }
 
   .containerTopHeader>.containerLogoText {
     padding-left: 15px;
   }
+  .containerTopHeader-boolean{
+    display: flex;
+  }
+  .containerLogoText {
+  width: 70px;
+  height: auto;
+}
+
 
   /*css movil header*/
   .containerLogoText {
@@ -1325,6 +1352,13 @@ footer {
   .containerCaligrafia {
     width: 170px;
   }
+  /*bucle text infinito css*/
+
+  .marquee-text {
+    font-size: 0.9rem;
+    margin-right: 30px;
+  }
+
 
   /*css del home*/
   .home-hero {
@@ -1335,6 +1369,8 @@ footer {
   .home-hero p {
     font-size: 2rem;
   }
+
+
 
   /*css Category icons responsive*/
   .container-category-icons-title {

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import React from 'react'
-
+import TopHeader from './TopHeader';
+import logo from "../../public/caligrafia.png"
 export function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
@@ -9,14 +10,22 @@ export function Navigation() {
     return (
         <>
             {/* Nav Desktop (igual al original) */}
-            <nav className="nav-desktop container">
-                <ul>
-                    <li><Link to="/">INICIO</Link></li>
-                    <li><Link to="/productos">PASTELES</Link></li>
-                    <li><Link to="/contacto">CONTACTO</Link></li>
-                    <li><Link to="/acerca">NOSOTROS</Link></li>
-                </ul>
-            </nav>
+            <div>
+                <TopHeader displayBoolean={true}></TopHeader>
+                <nav className="nav-desktop container">
+                    <TopHeader displayBoolean={false}></TopHeader>
+                    
+                    <ul>
+                        <li><Link to="/">INICIO</Link></li>
+                        <li><Link to="/productos">PASTELES</Link></li>
+                        <li><Link to="/contacto">CONTACTO</Link></li>
+                        <li><Link to="/acerca">NOSOTROS</Link></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+            
             {/* Botón Hamburguesa para Móvil */}
             <button
                 className="hamburger-btn"
@@ -28,8 +37,11 @@ export function Navigation() {
                 <span></span>
                 <span></span>
             </button>
+            
             {/* Menú Modal Móvil */}
             {isMenuOpen && (
+                <>
+                
                 <div className="mobile-menu-overlay" onClick={closeMenu}>
                     <div className="mobile-menu" onClick={(e) => e.stopPropagation()}>
                         <button
@@ -47,6 +59,8 @@ export function Navigation() {
                         </ul>
                     </div>
                 </div>
+                
+                </>
             )}
 
 

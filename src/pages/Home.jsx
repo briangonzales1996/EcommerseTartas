@@ -9,7 +9,7 @@ import TextMarquee from "../components/TextMarquee";
 function Home() {
   return (
     <>
-    <TextMarquee text='ATENCIÓN LO PEDIDOS DE HACEN CON ANTICIPACIÓN'/>
+    <TextMarquee text='ATENCIÓN LOS PEDIDOS DE HACEN CON ANTICIPACIÓN'/>
     <div className="container home-hero">
       <h1 >Pasteleria Mary</h1>
       <p >Descubre nuestras deliciosas tortas, perfectas para cualquier ocasión.</p>

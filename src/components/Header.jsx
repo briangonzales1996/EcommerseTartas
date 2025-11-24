@@ -4,7 +4,7 @@ import { Navigation } from './Navigation';
 function Header() {
   return (
     <header>
-    <TopHeader></TopHeader>
+      
       <Navigation/>
       
 
