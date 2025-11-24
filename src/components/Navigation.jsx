@@ -11,10 +11,10 @@ export function Navigation() {
             {/* Nav Desktop (igual al original) */}
             <nav className="nav-desktop container">
                 <ul>
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/productos">Pasteles</Link></li>
-                    <li><Link to="/contacto">Contacto</Link></li>
-                    <li><Link to="/acerca">Acerca de Mí</Link></li>
+                    <li><Link to="/">INICIO</Link></li>
+                    <li><Link to="/productos">PASTELES</Link></li>
+                    <li><Link to="/contacto">CONTACTO</Link></li>
+                    <li><Link to="/acerca">NOSOTROS</Link></li>
                 </ul>
             </nav>
             {/* Botón Hamburguesa para Móvil */}
@@ -43,7 +43,7 @@ export function Navigation() {
                             <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
                             <li><Link to="/productos" onClick={closeMenu}>Pasteles</Link></li>
                             <li><Link to="/contacto" onClick={closeMenu}>Contacto</Link></li>
-                            <li><Link to="/acerca" onClick={closeMenu}>Acerca de Mí</Link></li>
+                            <li><Link to="/acerca" onClick={closeMenu}>Nosotros</Link></li>
                         </ul>
                     </div>
                 </div>

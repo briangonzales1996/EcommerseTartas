@@ -1,7 +1,8 @@
 function Contact() {
+  const urlNumber = 'https://wa.me/34611523675'
   return (
     <div className="container container-contact">
-      <h1>Contacto</h1>
+      <h1>Contactactanos y reserva tu pedido ahora</h1>
       <form>
         <input type="text" placeholder="Nombre" required />
         <input type="email" placeholder="Email" required />
@@ -9,7 +10,7 @@ function Contact() {
         <button type="submit">Enviar</button>
       </form>
       <p>Ubicación: Calle Nicolas Sanchez, Ciudad</p>
-      <p>Teléfono: +123 456 7890</p>
+      <p>Teléfono: <a href={urlNumber}>+34611523675</a></p>
       <p>Redes: @eccomerse</p>
       {/* Mapa integrado (reemplaza con tu embed de Google Maps) */}
       <iframe

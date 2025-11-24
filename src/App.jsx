@@ -9,6 +9,7 @@ import Home from './pages/Home.jsx';
 import Products from './pages/Products.jsx';
 import Contact from './pages/Contact.jsx';
 import About from './pages/About.jsx';
+import TextMarquee from './components/TextMarquee.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,8 +17,9 @@ function App() {
   return (
     <>
       <Router>
+       
       <Header />
-      
+       
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
