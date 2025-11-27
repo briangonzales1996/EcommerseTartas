@@ -109,7 +109,9 @@ const CategoryItem = ({ nombre, index,icon }) => {
 
   return (
     // 4. Adjuntamos la 'ref' al elemento DOM real que queremos observar
+    
     <article
+      
       ref={ref}
       tabIndex="0"
       className={`item-a-animar ${animationClass}`}
@@ -123,6 +125,8 @@ const CategoryItem = ({ nombre, index,icon }) => {
       <div className='icons-lineal' />
 
     </article>
+    
+   
   );
 };
 

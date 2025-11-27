@@ -1,14 +1,14 @@
 import React from "react";
 
 const products = [
-    { id: 1, name: 'Bautismo Dorada', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-dorado.jpeg' },
-    { id: 2, name: 'Bautismo Celesete', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-celeste.jpeg' },
-    { id: 3, name: 'Bautismo Rosa', category: "bautismo", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-rosa.jpeg' },
-    { id: 4, name: 'Boda Salmon', category: "boda", description: 'Personalizada para eventos', image: '../../public/tartas/boda-salmon.jpeg' },
-    { id: 5, name: 'Boda para 200 personas', category: "boda", description: 'Personalizada para eventos', image: '../../public/tartas/boda-200-persona.jpeg' },
+    { id: 1, name: 'Bautismo Dorada', category: "bautismo", description: 'Torta para 100 personas color dorada para bautismo', image: '../../public/tartas/bautismo-dorado.jpeg' },
+    { id: 2, name: 'Bautismo Celeste', category: "bautismo", description: 'Torta para 200 personas color celeste para bautismo', image: '../../public/tartas/bautismo-celeste.jpeg' },
+    { id: 3, name: 'Bautismo Rosa', category: "bautismo", description: 'Torta para 200 personas color rosa para bautismo', image: '../../public/tartas/bautismo-rosa.jpeg' },
+    { id: 4, name: 'Boda Salmon', category: "boda", description: 'Torta para 300 personas color celeste para casamiento', image: '../../public/tartas/boda-salmon.jpeg' },
+    { id: 5, name: 'Boda para 200 personas', category: "boda", description: 'Torta para 500 personas color celeste para casamiento', image: '../../public/tartas/boda-200-persona.jpeg' },
     { id: 6, name: 'Aniversario celeste', category: "aniversario", description: 'Tarta para 200 persones para aniversario o boda', image: '../../public/tartas/celeste-7-tortas.jpeg' },
     { id: 7, name: 'Bautismo de Mickey', description: 'Tarta Personalizada para 150 personas', image: '../../public/tartas/bautismo-mickey.jpeg' },
-    { id: 8, name: 'Tortas figura cuadrada', category: "aniversario", description: 'Personalizada para eventos', image: '../../public/tartas/bautismo-cuadrados.jpeg' },
+    { id: 8, name: 'Tortas figura cuadrada', category: "aniversario", description: 'Tarta para 100 personas para bautismo', image: '../../public/tartas/bautismo-cuadrados.jpeg' },
     { id: 9, name: 'Familiar 2 pisos', category: "cumpleaños", description: 'Tarta de 2 pisos para 50 personas', image: '../../public/tartas/familiar-2pisos.jpeg' },
     { id: 10, name: 'Tarta Personalizada Boca', category: "cumpleaños", description: 'Tarta personalizada para 30 personas', image: '../../public/tartas/boca-escudo.jpeg' },
     { id: 11, name: 'Tarta Personalizada Bolivar', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
@@ -18,6 +18,15 @@ const products = [
     { id: 15, name: 'Tarta de Bautismo Rosa', category: "bautismo", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
     { id: 16, name: 'Tarta de Bautismo Verde', category: "bautismo", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
     { id: 17, name: 'Tarta para Mis 15', category: "15años", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 18, name: 'Tarta personalizada Real madrid', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 19, name: 'Tarta para boda rosa claro', category: "boda", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 20, name: 'Tarta para Mis 15', category: "15años", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 21, name: 'Tarta con  roseras rosas', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 22, name: 'Tarta para bautismo cuadrada azul', category: "bautismo", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 23, name: 'Tarta para aniversario blanca', category: "aniversario", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 24, name: 'Boda con rosas salmon', category: "boda", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 25, name: 'Tarta para cumpleaños', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 26, name: 'Tarta personalizada de Dragon Ball', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
 
     // Agrega más productos aquí
 ];

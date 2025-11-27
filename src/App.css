@@ -13,11 +13,12 @@
   /* Gris oscuro */
   --bg-color: #fefefe;
   /* Blanco suave */
+  --color-footer:#ff4081;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --border-radius: 12px;
   --transition: all 0.3s ease;
   --font-sinze-h1-section: 2.9rem;
-  --font-sinze-h2-section: 2.3rem;
+  --font-sinze-h2-section: 1.5rem;
   --border-radius-button: 5px;
 }
 
@@ -322,6 +323,7 @@ main {
 /* Products */
 .containerProducts {
   max-width: 1200px;
+  min-height: 100dvh;
 }
 
 .gallery {
@@ -399,8 +401,12 @@ main {
 
 /* Contact */
 .container-contact {
-  max-width: 1200px;
-  
+  padding: 0;
+  padding-top: 20px;
+}
+.container-contact>h1{
+  font-family: sans-serif;
+  text-align: center;
 }
 
 .contact-section {
@@ -417,6 +423,8 @@ form {
   box-shadow: var(--shadow);
   width: 100%;
   max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 form input,
@@ -460,30 +468,35 @@ form button:hover {
 
 }
 
-.contact-info {
-  text-align: center;
-  background: var(--accent-color);
-  padding: 20px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
 
-}
 
 .map {
   width: 100%;
-  height: 300px;
+  height: 400px;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   margin-top: 20px;
 }
 
-.container-contact>p{
+.container-contact>.container-location{
+  
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.container-contact>.container-location>.location{
+  
+}
+.container-contact>.container-location>.location>p{
   display: flex;
   align-items: center;
   gap: 5px;
+  
   margin-top: 5px;
+
 }
-.container-contact>p>img,.container-contact>p>a>img{
+.container-contact>.container-location>.location>p>img,.container-contact>.container-location>.location>p>a>img{
   width: 40px;
   height: 40px;
 }
@@ -569,17 +582,7 @@ form button:hover {
 
 
 
-/* Footer */
-footer {
-  background:var(--text-color);
-  color: white;
-  text-align: center;
-  height: 60px;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 
 
@@ -636,7 +639,7 @@ footer {
 .container-category-icons-title {
   font-size: 2.9rem;
   margin-bottom: 0.5rem;
-  
+  text-align: center;
 }
 
 .container-category-icons-text {
@@ -909,6 +912,7 @@ footer {
   font-weight: 700;
   font-size: var(--font-sinze-h2-section);
   margin-bottom: 0.25rem;
+  font-family: sans-serif;
 
 }
 
@@ -921,6 +925,7 @@ footer {
 }
 
 .valor-description {
+  display: block;
   font-size: 0.95rem;
   color: #555;
   line-height: 1.5;
@@ -1127,7 +1132,7 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   font-size: 3rem;
-  color: white;
+  color: var(--bg-color);
   background: rgba(0, 0, 0, 0.3);
   border: none;
   width: 50px;
@@ -1161,7 +1166,7 @@ footer {
   right: 15px;
   font-size: 2.5rem;
   background: rgba(0, 0, 0, 0.4);
-  color: white;
+  color: var(--bg-color);
   border: none;
   border-radius: 50%;
   width: 44px;
@@ -1176,6 +1181,258 @@ footer {
 .modal-close:hover {
   background: rgba(0, 0, 0, 0.75);
 }
+
+
+
+/*FOOTER css*/
+
+.footer {
+  background-color: #2d2d2d;
+  color: var(--bg-color);
+  padding: 30px 20px ;
+  padding-bottom: 0;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  
+ 
+}
+
+/* Sección de marca */
+.footer-brand {
+  grid-column: span 1;
+}
+
+.logo img {
+  max-width: 130px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #d0d0d0;
+}
+
+.contact-info a {
+  color: var(--bg-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: var(--color-footer);
+}
+
+.address {
+  font-weight: 500;
+}
+
+/* Secciones con enlaces */
+.footer-section {
+  grid-column: span 1;
+}
+
+.footer-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--bg-color);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #d0d0d0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s, padding-left 0.3s;
+  display: inline-block;
+}
+
+.footer-links a:hover {
+  color: var(--color-footer);
+  padding-left: 5px;
+}
+
+/* Newsletter */
+.footer-newsletter {
+  grid-column: span 1;
+}
+
+.newsletter-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #3d3d3d;
+  color: var(--bg-color);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.newsletter-input::placeholder {
+  color: #999;
+}
+
+.newsletter-input:focus {
+  border-color: var(--color-footer);
+}
+
+.newsletter-button {
+  padding: 12px 16px;
+  background: linear-gradient(135deg, var(--color-footer), #ff6b9d);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 64, 129, 0.4);
+}
+
+.newsletter-button:active {
+  transform: translateY(0);
+}
+
+/* Redes sociales */
+.social-media {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #3d3d3d;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bg-color);
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+  background-color: var(--color-footer);
+  transform: translateY(-3px);
+}
+
+.social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Footer bottom */
+.footer-bottom {
+  
+  padding: 20px 0px;
+}
+
+.footer-bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  flex: 1;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 13px;
+  color: #999;
+}
+
+/* Métodos de pago */
+.payment-methods {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.payment-methods img {
+  height: 25px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.payment-methods img:hover {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-newsletter {
+    grid-column: span 2;
+  }
+}
+
+
 
 
 
@@ -1203,32 +1460,7 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
 
-  /*about card section*/
-  .about-title {
-    font-size: 1.8rem;
-  }
-
-  .about-underline {
-    width: 40px;
-    height: 3px;
-  }
-
-  .card-title {
-    font-size: 1.35rem;
-  }
-
-  .card-underline {
-    width: 30px;
-    height: 3px;
-  }
-
-  .card-text {
-    font-size: 0.95rem;
-  }
-
-}
 
 
 
@@ -1312,6 +1544,45 @@ footer {
     height: 60vh;
   }
 
+
+    /*Footer css resposive 768px*/
+  .footer {
+    padding: 40px 20px 0;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-brand,
+  .footer-section,
+  .footer-newsletter {
+    grid-column: span 1;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .payment-methods {
+    justify-content: center;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+
 }
 
 
@@ -1376,6 +1647,30 @@ footer {
   .container-category-icons-title {
     font-size: 2.2rem;
 
+    
+  }
+
+  /*about card section*/
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-underline {
+    width: 40px;
+    height: 3px;
+  }
+
+  .card-title {
+    font-size: 1.35rem;
+  }
+
+  .card-underline {
+    width: 30px;
+    height: 3px;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
   }
 
   /*Css carousel responsive*/
@@ -1452,7 +1747,38 @@ footer {
     font-size: 1rem;
   }
 
+  /*css footer responsive*/
+   .footer {
+    padding: 30px 15px 0;
+  }
 
+  .footer-title {
+    font-size: 15px;
+  }
+
+  .footer-links a,
+  .newsletter-text,
+  .contact-info {
+    font-size: 13px;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .payment-methods img {
+    height: 22px;
+  }
+
+  .copyright p {
+    font-size: 12px;
+  }
 
 }
 

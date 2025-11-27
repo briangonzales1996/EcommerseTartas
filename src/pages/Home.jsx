@@ -11,7 +11,7 @@ function Home() {
     <>
     <TextMarquee text='ATENCIÓN LOS PEDIDOS DE HACEN CON ANTICIPACIÓN'/>
     <div className="container home-hero">
-      <h1 >Pasteleria Mary</h1>
+      <h1>Tartas Mary (Tortas)</h1>
       <p >Descubre nuestras deliciosas tortas, perfectas para cualquier ocasión.</p>
       
       
@@ -23,7 +23,7 @@ function Home() {
     <Servicios/>
     <CategoryIcons/>
     <CarouselImage/>
-    <Titlebackground/>
+    <Titlebackground text={"Calidad, experiencia y tradición desde 2000"}/>
     <Feature/>
     </>
     

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Titlebackground() {
+export default function Titlebackground({text}) {
   return (
     <div className="container-background">
-      <h1 className='background-text'>Calidad, experiencia y tradición desde 2000</h1>
+      <h1 className='background-text'>{text}</h1>
     </div>
   )
 }
