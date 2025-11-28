@@ -31,7 +31,7 @@ function Feature() {
     const data = {
         title:"Bienvenido a Pastelería Mary",
         text:(<p className="acerca-description">
-                Un concepto romántico de gastronomía delicada y deliciosa, para el deleite de los cinco sentidos. Nuestros valores reflejan el alma y la personalidad de nuestra Casa.
+                Somos una <strong>repostería</strong> dedicada a endulzar los momentos más importantes de la vida de nuestros clientes. Nos especializamos en tartas para cada ocasión especial, incluyendo <strong>bodas</strong> elegantes, <strong>cumpleaños</strong> vibrantes,  <strong>aniversarios</strong> románticos, celebraciones inolvidables de <strong>15 años</strong> y cualquier otro evento que merezca un toque dulce y memorable.
             </p>)
     }
     return (

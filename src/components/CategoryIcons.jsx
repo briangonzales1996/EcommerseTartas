@@ -137,9 +137,9 @@ const CategoryItem = ({ nombre, index,icon }) => {
 
 function CategoryIcons() {
   const data = {
-    title:"Pastelería y Confitería en Madrid",
+    title:"Respostería y pastelería mary (tartas)",
     text:(<p className='container-category-icons-text' >
-        En <strong>Pastelería Mary</strong> apostamos por hacer cada vez más accesible nuestra pastelería a todo aquel que quiera tener un pedacito de nosotros. Puedes hacer tu <strong>pedido online</strong>, con <strong>envío a domicilio</strong> o para <strong>recoger en tienda</strong>, de lunes a domingo.
+        En <strong>Tortas Mary</strong> apostamos por hacer cada vez más accesible nuestra pastelería a todo aquel que quiera tener un pedacito de nosotros. Puedes hacer tu <strong>pedido por whapsapp</strong> y <strong>recoger en tienda</strong>, de lunes a domingo.
       </p>)
   }
   return (

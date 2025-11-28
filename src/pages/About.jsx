@@ -26,7 +26,7 @@ function About() {
       </h1>
       <div className="about-underline" />
       <p className="about-description">
-        Es dulce y salado, un concepto romántico de gastronomía delicada y deliciosa, para el deleite de los cinco sentidos. Nuestros valores reflejan el alma y la personalidad de nuestra Casa.
+        Nuestra pasión se centra en las exquisitas <strong>Tortas de Mary</strong>, creaciones únicas que son el corazón de nuestro servicio. Con más de 20 años de experiencia en el arte de la <strong>pastelería</strong>, garantizamos la más alta calidad y sabor tradicional en cada pedido. Nos especializamos en tartas para cada ocasión especial, incluyendo <strong>bodas</strong> elegantes, cumpleaños vibrantes, <strong>aniversarios</strong> románticos, celebraciones inolvidables de <strong>15 años</strong> y cualquier otro evento que merezca un toque dulce y memorable.
       </p>
       <div className="about-cards">
         {
