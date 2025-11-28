@@ -403,6 +403,7 @@ main {
 .container-contact {
   padding: 0;
   padding-top: 20px;
+  
 }
 .container-contact>h1{
   font-family: sans-serif;
@@ -502,14 +503,20 @@ form button:hover {
 }
 
 /* About */
+.container-about-section{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/tartas/23-aniversario-blanca.jpeg");
+  min-height: 85dvh;
+  background-position: center;
+}
 .about-section {
   max-width: 1100px;
-  margin: 0 auto 60px auto;
+  
   padding: 4rem 1rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   color: #333;
   min-height: 80dvh;
+  
 }
 
 .about-title {
@@ -531,7 +538,7 @@ form button:hover {
   max-width: 700px;
   margin: 0 auto 40px auto;
   line-height: 1.6;
-  color: #555;
+  color: var(--bg-color);
 }
 
 .about-cards {
@@ -542,7 +549,7 @@ form button:hover {
 }
 
 .about-card {
-  background-color: #f7f7f7;
+  
   padding: 2rem 1.5rem;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgb(248 180 196 / 0.3);

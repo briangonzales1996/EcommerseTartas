@@ -20,7 +20,8 @@ const data = [
 
 function About() {
   return (
-    <section className="about-section container" aria-label="Sobre nosotros">
+    <div className="container-about-section">
+      <section className="about-section container" aria-label="Sobre nosotros">
       <h1 className="about-title">
         Bienvenido a <strong>Pasteles Mary</strong>
       </h1>
@@ -36,7 +37,10 @@ function About() {
         }
        
       </div>
+
     </section>
+    </div>
+    
   );
 }
 export default About;
