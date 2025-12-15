@@ -141,6 +141,10 @@ header {
   color: var(--primary-color);
   transform: translateY(-2px);
 }
+.nav-desktop .nav-desktop-click{
+  color: var(--primary-color);
+}
+
 
 /* Botón Hamburguesa (solo visible en móvil) */
 .hamburger-btn {

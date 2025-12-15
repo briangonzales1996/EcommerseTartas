@@ -12,7 +12,8 @@ function CarouselImage() {
 
     const getData = async () => {
         const req = await orderImage();
-        setData(req)
+        const newData = req.filter(item=>item.carrousel===true)
+        setData(newData)
     }
 
 
