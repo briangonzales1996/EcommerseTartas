@@ -78,12 +78,12 @@ function Contact() {
       ></iframe>
       <Titlebackground text={"Contactactanos y reserva tu pedido ahora"} />
       <form>
-        <label htmlFor="">Nombre Completo</label>
-        <input type="text" placeholder="Nombre" required />
-        <label htmlFor="">Email</label>
-        <input type="email" placeholder="Email" required />
-        <label htmlFor="">Mensaje</label>
-        <textarea placeholder="Mensaje" required></textarea>
+        <label htmlFor="name">Nombre Completo</label>
+        <input type="text" placeholder="Nombre" id='name' required />
+        <label htmlFor="email">Email</label>
+        <input type="email" placeholder="Email" id='email' required />
+        <label htmlFor="feedback">Mensaje</label>
+        <textarea placeholder="Mensaje" id='feedback' required></textarea>
         <button type="submit">Enviar</button>
       </form>
     </div>
