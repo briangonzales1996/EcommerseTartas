@@ -13,7 +13,7 @@
   /* Gris oscuro */
   --bg-color: #fefefe;
   /* Blanco suave */
-  --color-footer:#ff4081;
+  --color-footer: #ff4081;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --border-radius: 12px;
   --transition: all 0.3s ease;
@@ -54,18 +54,73 @@ h3 {
 
 }
 
+
+
+
+/*page loaded first*/
+/* Contenedor que evita el scroll mientras carga */
+.curtain-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Base común para ambas mitades */
+.curtain-panel {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  background-color: #1a1a1a;
+  /* Color de fondo de la cortina */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+.curtain-left {
+  left: 0;
+  justify-content: flex-end;
+  /* Alinea la línea al centro */
+}
+
+.curtain-right {
+  right: 0;
+  justify-content: flex-start;
+  /* Alinea la línea al centro */
+}
+
+/* Línea decorativa en el medio */
+.curtain-line {
+  width: 2px;
+  height: 100vh;
+  background-color: #ffd700;
+  /* Color dorado o el de tu marca */
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* El contenido de tu web */
+.main-content {
+  width: 100%;
+  min-height: 100vh;
+  transition: opacity 0.8s ease-in;
+}
+
+
+
 /*Top header*/
 .containerTopHeader {
   display: flex;
-  
+
   gap: 10px;
-  
-  
+
+
 }
 
 .containerLogoText {
   width: 70px;
-height: 80px;
+  height: 80px;
 }
 
 .logoText {
@@ -86,7 +141,7 @@ height: 80px;
 
 .containerCaligrafia {
   width: 230px;
-  
+
 }
 
 .containerCaligrafia>img {
@@ -94,7 +149,7 @@ height: 80px;
   height: 100%;
 }
 
-.containerTopHeader-boolean{
+.containerTopHeader-boolean {
   display: none;
 }
 
@@ -109,21 +164,22 @@ header {
 }
 
 /* Estilos para Nav Desktop (igual al original, pero con clases específicas) */
-.nav-desktop{
+.nav-desktop {
   display: flex;
-  padding: 5px 20px ;
-  
+  padding: 5px 20px;
+
   justify-content: space-between;
   background-color: var(--bg-color);
-  
+
 }
+
 .nav-desktop ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 30px;
   align-items: center;
-  
+
 }
 
 .nav-desktop a {
@@ -131,7 +187,7 @@ header {
   color: var(--text-color, #333);
   font-weight: 600;
   font-size: 1.1rem;
-  
+
   border-radius: var(--border-radius, 12px);
   transition: var(--transition, all 0.3s ease);
 }
@@ -141,7 +197,8 @@ header {
   color: var(--primary-color);
   transform: translateY(-2px);
 }
-.nav-desktop .nav-desktop-click{
+
+.nav-desktop .nav-desktop-click {
   color: var(--primary-color);
 }
 
@@ -196,7 +253,7 @@ header {
   /* Inicialmente oculto */
   width: 250px;
   height: 100vh;
-  background: var(--bg-color);
+  background: rgba(255, 255, 255, 0.815);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   transition: left 0.3s ease;
@@ -284,6 +341,7 @@ main {
   box-shadow: var(--shadow);
   background-position: center;
   height: 90vh;
+  background-attachment: fixed;
 }
 
 .home-container {
@@ -295,7 +353,7 @@ main {
 .home-hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-
+  margin-top: 50px;
 
 }
 
@@ -379,7 +437,7 @@ main {
 }
 
 /*CSS loading product*/
-.product-card-loading{
+.product-card-loading {
   background: white;
   border: 1px solid #eee;
   border-radius: var(--border-radius);
@@ -393,7 +451,8 @@ main {
   height: 350px;
   align-items: center;
 }
-.loading{
+
+.loading {
   border: 6px solid var(--text-color);
   border-radius: 100%;
   border-top-color: var(--bg-color);
@@ -407,9 +466,10 @@ main {
 .container-contact {
   padding: 0;
   padding-top: 20px;
-  
+
 }
-.container-contact>h1{
+
+.container-contact>h1 {
   font-family: sans-serif;
   text-align: center;
 }
@@ -483,44 +543,48 @@ form button:hover {
   margin-top: 20px;
 }
 
-.container-contact>.container-location{
-  
+.container-contact>.container-location {
+
   margin-top: 30px;
   display: flex;
   gap: 30px;
   justify-content: center;
 }
-.container-contact>.container-location>.location{
-  
-}
-.container-contact>.container-location>.location>p{
+
+.container-contact>.container-location>.location {}
+
+.container-contact>.container-location>.location>p {
   display: flex;
   align-items: center;
   gap: 5px;
-  
+
   margin-top: 5px;
 
 }
-.container-contact>.container-location>.location>p>img,.container-contact>.container-location>.location>p>a>img{
+
+.container-contact>.container-location>.location>p>img,
+.container-contact>.container-location>.location>p>a>img {
   width: 40px;
   height: 40px;
 }
 
 /* About */
-.container-about-section{
+.container-about-section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/tartas/23-aniversario-blanca.jpeg");
   min-height: 85dvh;
   background-position: center;
+
 }
+
 .about-section {
   max-width: 1100px;
-  
+
   padding: 4rem 1rem;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   color: #333;
   min-height: 80dvh;
-  
+
 }
 
 .about-title {
@@ -553,7 +617,7 @@ form button:hover {
 }
 
 .about-card {
-  
+
   padding: 2rem 1.5rem;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgb(248 180 196 / 0.3);
@@ -659,7 +723,7 @@ form button:hover {
   margin: 0 auto 2rem;
   line-height: 1.5;
   color: var(--text-color);
-  
+
 }
 
 .category-icons-grid {
@@ -746,12 +810,15 @@ form button:hover {
   justify-content: center;
   overflow: hidden;
   border-radius: 12px;
-  
+
 }
+
 .slides {
   display: flex;
-  width: calc(100% * 3); /* Cambia '3' por el número de items si agregas más */
-  transition: transform 0.5s ease; /* Animación de desplazamiento */
+  width: calc(100% * 3);
+  /* Cambia '3' por el número de items si agregas más */
+  transition: transform 0.5s ease;
+  /* Animación de desplazamiento */
   border-radius: 12px;
 }
 
@@ -765,9 +832,9 @@ form button:hover {
 }
 
 .carousel-image {
-  
+
   height: 93%;
-  
+
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(248, 180, 196, 0.4);
@@ -777,7 +844,7 @@ form button:hover {
 .slide-text {
   margin-top: 1rem;
   color: var(--text-color);
-  
+
 }
 
 .slide-text h3 {
@@ -1048,32 +1115,37 @@ form button:hover {
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(135deg, var(--primary-color)); /* Fondo rosa pastel */
-  
+  background: linear-gradient(135deg, var(--primary-color));
+  /* Fondo rosa pastel */
+
   padding: 10px 0;
- 
+
   box-shadow: 0 2px 8px rgba(248, 180, 196, 0.3);
-  
+
 }
 
 .marquee {
-  
+
   display: flex;
   white-space: nowrap;
-  animation: scroll 20s linear infinite; /* Duración ajustable */
+  animation: scroll 20s linear infinite;
+  /* Duración ajustable */
 }
 
 .marquee:hover {
-  animation-play-state: paused; /* Pausa al hover */
+  animation-play-state: paused;
+  /* Pausa al hover */
 }
 
 .marquee-text {
   font-family: 'Poppins', sans-serif;
- 
+
   font-size: 1.2rem;
   font-weight: 600;
-  color: #262626; /* Texto oscuro */
-  margin-right: 50px; /* Espacio entre textos */
+  color: #262626;
+  /* Texto oscuro */
+  margin-right: 50px;
+  /* Espacio entre textos */
   display: inline-block;
 }
 
@@ -1200,9 +1272,9 @@ form button:hover {
 .footer {
   background-color: #2d2d2d;
   color: var(--bg-color);
-  padding: 30px 20px ;
+  padding: 30px 20px;
   padding-bottom: 0;
-  
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
@@ -1212,8 +1284,8 @@ form button:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
-  
- 
+
+
 }
 
 /* Sección de marca */
@@ -1378,7 +1450,7 @@ form button:hover {
 
 /* Footer bottom */
 .footer-bottom {
-  
+
   padding: 20px 0px;
 }
 
@@ -1386,7 +1458,7 @@ form button:hover {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  
+
   justify-content: space-between;
   align-items: center;
   gap: 30px;
@@ -1491,11 +1563,12 @@ form button:hover {
   .home-hero h1 {
     font-size: 2rem;
   }
-  
-/* Responsivo text marquet text infinito */
+
+  /* Responsivo text marquet text infinito */
   .marquee-text {
     font-size: 1rem;
   }
+
   .marquee-container {
     padding: 8px 0;
   }
@@ -1556,7 +1629,7 @@ form button:hover {
   }
 
 
-    /*Footer css resposive 768px*/
+  /*Footer css resposive 768px*/
   .footer {
     padding: 40px 20px 0;
   }
@@ -1610,13 +1683,15 @@ form button:hover {
   .containerTopHeader>.containerLogoText {
     padding-left: 15px;
   }
-  .containerTopHeader-boolean{
+
+  .containerTopHeader-boolean {
     display: flex;
   }
+
   .containerLogoText {
-  width: 70px;
-  height: auto;
-}
+    width: 70px;
+    height: auto;
+  }
 
 
   /*css movil header*/
@@ -1634,6 +1709,7 @@ form button:hover {
   .containerCaligrafia {
     width: 170px;
   }
+
   /*bucle text infinito css*/
 
   .marquee-text {
@@ -1646,6 +1722,11 @@ form button:hover {
   .home-hero {
     padding: 40px 10px;
     height: auto;
+    background-attachment: local;
+  }
+
+  .home-hero h1 {
+    margin-top: 0;
   }
 
   .home-hero p {
@@ -1658,7 +1739,7 @@ form button:hover {
   .container-category-icons-title {
     font-size: 2.2rem;
 
-    
+
   }
 
   /*about card section*/
@@ -1688,7 +1769,8 @@ form button:hover {
   .carousel-container {
     padding: 0 10px;
   }
-  .carousel-image{
+
+  .carousel-image {
     width: auto;
   }
 
@@ -1716,6 +1798,12 @@ form button:hover {
     grid-template-columns: 1fr;
   }
 
+  
+
+  
+
+  
+
   /*css resposive category icons*/
   .category-icons-grid {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -1737,9 +1825,20 @@ form button:hover {
     font-size: 1.4rem;
   }
 
-  /*css movil fature*/
+  /*css movil fature Cards about*/
   .valor-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    
+  }
+  .valor-description {
+    font-size: .9rem;
+  }
+
+  /*CSS DE COMPONENTE background title*/
+
+
+  .background-text {
+    font-size: 1.5rem;
   }
 
   /*CSS MOVIL DE CATEGORIAS PRODCUTS DE IMAGENES*/
@@ -1759,7 +1858,7 @@ form button:hover {
   }
 
   /*css footer responsive*/
-   .footer {
+  .footer {
     padding: 30px 15px 0;
   }
 
@@ -1824,17 +1923,20 @@ form button:hover {
 
   to {
     background-color: var(--bg-color);
-    
+
   }
 }
 
 /* Animación de desplazamiento */
 @keyframes scroll {
   0% {
-    transform: translateX(100%); /* Comienza desde la derecha */
+    transform: translateX(100%);
+    /* Comienza desde la derecha */
   }
+
   100% {
-    transform: translateX(-100%); /* Termina fuera a la izquierda */
+    transform: translateX(-100%);
+    /* Termina fuera a la izquierda */
   }
 }
 

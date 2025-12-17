@@ -2,6 +2,7 @@ import React, { use, useEffect, useState } from 'react';
 import useOnScreen from '../hooks/useOnScreen';
 import { Button } from './Button';
 import TitleAnimation from './TitleAnimation';
+import { useNavigate } from 'react-router-dom';
 const colorCategoryIcon = "#4a4a4a";
 const colorFondIcon = "#f0f0f0";
 
@@ -66,6 +67,7 @@ const categorias = [
 
 
 const CategoryItem = ({ nombre, index,icon }) => {
+  const navigate = useNavigate();
   // 2. Adjuntamos el hook al componente
   // 'ref' es el elemento DOM, 'isVisible' es el estado booleano
   const [ref, isVisible] = useOnScreen({
@@ -111,7 +113,7 @@ const CategoryItem = ({ nombre, index,icon }) => {
     // 4. Adjuntamos la 'ref' al elemento DOM real que queremos observar
     
     <article
-      
+      onClick={()=>navigate('/productos')}
       ref={ref}
       tabIndex="0"
       className={`item-a-animar ${animationClass}`}

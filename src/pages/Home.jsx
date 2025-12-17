@@ -20,8 +20,11 @@ function Home() {
       
       
     </div>
+
     <Servicios/>
     <CategoryIcons/>
+    
+    <Titlebackground text={"Gran variedad de modelos adaptandose a tus gustos"}/>
     <CarouselImage/>
     <Titlebackground text={"Calidad, experiencia y tradición desde 2000"}/>
     <Feature/>

@@ -62,7 +62,7 @@ function CarouselImage() {
             <div className="carousel-container">
                 <div className="carousel">
                     <button className="arrow left-arrow" onClick={prevSlide} aria-label="Imagen anterior">&#10094;</button>
-
+                    
 
                     <div className="slides" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                         {data.map((item) => (

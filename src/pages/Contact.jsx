@@ -76,7 +76,7 @@ function Contact() {
         allowFullScreen=""
         loading="lazy"
       ></iframe>
-      <Titlebackground text={"Contactactanos y reserva tu pedido ahora"} />
+      <Titlebackground text={"Contactactanos y reserva tu pedido ahora"}  />
       <form>
         <label htmlFor="name">Nombre Completo</label>
         <input type="text" placeholder="Nombre" id='name' required />
