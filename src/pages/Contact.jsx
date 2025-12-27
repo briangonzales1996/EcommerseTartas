@@ -4,9 +4,13 @@ import face from '../../public/icons-facebook.png'
 import { CardsAbout } from '../components/CardsAbout'
 import TitleAnimation from '../components/TitleAnimation'
 import Titlebackground from '../components/Titlebackground'
+import ContactAplication from '../components/ContactAplication'
 
 const urlNumber = 'https://wa.me/34611523675'
 const urlNumber2 = 'https://wa.me/541132480408'
+const frameSpanish = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1277.8501930976279!2d-3.7057869182403413!3d40.3809944894838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227ad9fee9ed3%3A0x501e18cd834ef3d2!2sC.%20Antonio%20Velasco%20Zazo%20%26%20C.%20de%20Nicol%C3%A1s%20S%C3%A1nchez%2C%20Usera%2C%2028026%20Madrid!5e0!3m2!1ses!2ses!4v1762639651892!5m2!1ses!2ses'
+const frameArg = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.329010014735!2d-58.46839992415045!3d-34.671972290990226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc957604d79af%3A0x9a1003d54155c576!2sCorval%C3%A1n%20%26%20Avenida%20Argentina%2C%20C1439%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1764179625722!5m2!1ses!2ses'
+
 const datos = [
   {
     title: "Usera,Nicolas Sanchez,Madrid",
@@ -62,20 +66,13 @@ function Contact() {
 
 
       {/* Mapa integrado (reemplaza con tu embed de Google Maps) */}
-      <iframe
-        className="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1277.8501930976279!2d-3.7057869182403413!3d40.3809944894838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227ad9fee9ed3%3A0x501e18cd834ef3d2!2sC.%20Antonio%20Velasco%20Zazo%20%26%20C.%20de%20Nicol%C3%A1s%20S%C3%A1nchez%2C%20Usera%2C%2028026%20Madrid!5e0!3m2!1ses!2ses!4v1762639651892!5m2!1ses!2ses"
-        allowFullScreen=""
-        loading="lazy"
-      ></iframe>
+      <ContactAplication phone={'+34 912 345 678'} address={'Calle Francisco Abril 11, 28007 Madrid, España'} url={urlNumber} iframes={frameSpanish} title={'Visítanos en Madrid'}/>
+      <ContactAplication phone={'+54 1132480408'} address={'Calle Ordoñez, Villa Lugano,Capital,Argentina '} url={urlNumber2} iframes={frameArg} title='Visítanos en Capital Buenos Aires'/>
 
 
-      <iframe
-        className="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d820.329010014735!2d-58.46839992415045!3d-34.671972290990226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc957604d79af%3A0x9a1003d54155c576!2sCorval%C3%A1n%20%26%20Avenida%20Argentina%2C%20C1439%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2ses!4v1764179625722!5m2!1ses!2ses"
-        allowFullScreen=""
-        loading="lazy"
-      ></iframe>
+      
+
+
       <Titlebackground text={"Contactactanos y reserva tu pedido ahora"}  />
       <form>
         <label htmlFor="name">Nombre Completo</label>
