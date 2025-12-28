@@ -28,7 +28,7 @@ function Home() {
       
       
         <Button text={"RESERVAR AHORA"} url={"./contacto"}/>
-   
+      
       
       
     </div>
@@ -37,15 +37,18 @@ function Home() {
     
     
 
-    <Servicios/>
+    <Servicios textColor={'#f8b4c4'} backGround={'#262626'}/>
     <CategoryIcons/>
     
     <Titlebackground text={"Gran variedad de modelos adaptandose a tus gustos"}/>
     <CarouselImage/>
     <Titlebackground text={"Calidad, experiencia y tradición desde 2000"}/>
     <Feature/>
+    <Titlebackground text={"Has tu reserva por Whatsapp"}/>
     <ContactAplication phone={'+34 912 345 678'} address={'Calle Francisco Abril 11, 28007 Madrid, España'} url={urlNumber} iframes={frameSpanish} title={'Visítanos en Madrid'}/>
+    <Servicios textColor={"#f8b4c4"} backGround="#262626"/>
     <TestimonialsSlider/>
+
     </>
     
   );

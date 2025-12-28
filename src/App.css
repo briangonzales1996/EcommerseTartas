@@ -1433,7 +1433,7 @@ form button:hover {
   width: 100%;
   margin-top: 40px;
   padding: 18px 32px;
-  background: linear-gradient(135deg, #8B4513, #A0522D);
+  background: linear-gradient(135deg, var(--text-color), var(--text-color));
   color: var(--bg-color);
   border: none;
   border-radius: 8px;
@@ -1570,7 +1570,7 @@ form button:hover {
 
 .testimonial-card {
   min-width: 100%;
-  background: #f5ebe0;
+  background: var(--primary-color);
   border-radius: 24px;
   padding: 60px 80px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
@@ -1597,7 +1597,7 @@ form button:hover {
 }
 
 .star {
-  color: #FFD700;
+  color: #ffffff;
   font-size: 28px;
 }
 
@@ -1671,7 +1671,7 @@ form button:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #d4c4b0;
+  background: var(--primary-color);
   border: none;
   cursor: pointer;
   transition: all 0.3s;
@@ -1679,13 +1679,13 @@ form button:hover {
 }
 
 .dot.active {
-  background: #8B4513;
+  background: var(--color-footer);
   width: 32px;
   border-radius: 6px;
 }
 
 .dot:hover {
-  background: #a67c52;
+  background: var(--text-color);
 }
 
 
