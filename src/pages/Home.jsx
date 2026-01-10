@@ -22,6 +22,7 @@ function Home() {
     <TextMarquee text='ATENCIÓN LOS PEDIDOS DE HACEN CON ANTICIPACIÓN'/>
 
     {
+      /* 
       <div className="container home-hero">
       <h1>Tartas Mary (Tortas)</h1>
       <p >Descubre nuestras deliciosas tortas, perfectas para cualquier ocasión.</p>
@@ -32,7 +33,10 @@ function Home() {
       
       
     </div>
+    */
     }
+
+    <HeroBannerFirst/>
 
     
     

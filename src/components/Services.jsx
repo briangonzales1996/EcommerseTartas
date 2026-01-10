@@ -101,7 +101,13 @@ const CategoryItem = ({ nombre, index, icon,textColor }) => {
             aria-label={nombre}
 
         >
-            <div style={styles.servicio}>
+            <div style={styles.servicio}
+            ref={ref}
+            tabIndex="0"
+            className={`item-a-animar ${animationClass}`}
+            aria-label={nombre}
+            
+            >
                 <div style={styles.iconWrapper}>{icon}</div>
             <p style={{ ...styles.text, color: textColor }}>{nombre}</p>
             </div>

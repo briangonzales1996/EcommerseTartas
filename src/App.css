@@ -157,7 +157,6 @@ h3 {
 /* Header */
 header {
   background-image: linear-gradient(135deg, var(--text-color));
-
   top: 0;
   z-index: 100;
   box-shadow: var(--shadow);
@@ -167,7 +166,6 @@ header {
 .nav-desktop {
   display: flex;
   padding: 5px 20px;
-
   justify-content: space-between;
   background-color: var(--bg-color);
 
@@ -226,7 +224,6 @@ header {
   background: var(--text-color, #333);
   margin: 3px 0;
   transition: 0.3s;
-
   animation: scrollMenuLine linear forwards;
   scroll-timeline: scrollWith block;
   animation-timeline: scroll();
@@ -331,61 +328,15 @@ main {
 
 }
 
-/* Home */
-
-.home-hero {
-  text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public//tortaFondo.jpeg");
-  padding: 60px 20px;
-  background-size: cover;
-  box-shadow: var(--shadow);
-  background-position: center;
-  height: 90vh;
-  background-attachment: fixed;
-}
-
-.home-container {
-  background-image: url("https://cdn0.matrimonios.cl/article/0492/3_2/1280/png/22940-portada-2020-08-05t100132-064.webp"), linear-gradient(135deg, var(--bg-color), var(--accent-color));
-  background-size: cover;
-
-}
-
-.home-hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  margin-top: 50px;
-
-}
-
-.home-hero p {
-  font-size: 3.5rem;
-  margin-bottom: 30px;
-  color: var(--primary-color);
-  max-width: 800px;
-  margin: auto;
-  font-weight: 700;
-}
-
-.home-hero img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-}
-
-.home-hero img:hover {
-  transform: scale(1.05);
-}
-
-
 
 /*Hero Banner background main first */
 
 .hero-banner-decake {
-  background: #f9f5f0;
   padding: 80px 20px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public//tortaFondo.jpeg");
+  background-position: center;
+  
 }
 
 .hero-banner-decake-container {
@@ -408,7 +359,7 @@ main {
   align-items: center;
   gap: 8px;
   font-size: 15px;
-  color: #2d2d2d;
+  color: var(--bg-color);
   font-weight: 500;
   width: fit-content;
 }
@@ -421,7 +372,7 @@ main {
   font-family: 'Playfair Display', serif;
   font-size: 64px;
   font-weight: 700;
-  color: #2d2d2d;
+  color: var(--primary-color);
   line-height: 1.1;
   margin: 0;
 }
@@ -429,14 +380,14 @@ main {
 .hero-banner-decake-description {
   font-size: 18px;
   line-height: 1.7;
-  color: #666;
+  color: var(--primary-color);
   max-width: 550px;
 }
 
 .hero-banner-decake-buttons {
   display: flex;
   gap: 20px;
-  margin-top: 15px;
+  width: max-content;
 }
 
 .hero-banner-decake-btn {
@@ -453,27 +404,8 @@ main {
   text-decoration: none;
 }
 
-.hero-banner-decake-btn-primary {
-  background: linear-gradient(135deg, #8B4513, #A0522D);
-  color: white;
-  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
-}
 
-.hero-banner-decake-btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
-}
 
-.hero-banner-decake-btn-secondary {
-  background: white;
-  color: #2d2d2d;
-  border: 2px solid #e0e0e0;
-}
-
-.hero-banner-decake-btn-secondary:hover {
-  border-color: #8B4513;
-  color: #8B4513;
-}
 
 .hero-banner-decake-stats {
   display: flex;
@@ -492,13 +424,13 @@ main {
 .hero-banner-decake-stat-number {
   font-size: 42px;
   font-weight: 700;
-  color: #2d2d2d;
+  color: var(--primary-color);
   font-family: 'Playfair Display', serif;
 }
 
 .hero-banner-decake-stat-label {
   font-size: 15px;
-  color: #666;
+  color: var(--primary-color);
 }
 
 .hero-banner-decake-image-wrapper {
@@ -519,7 +451,7 @@ main {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  background: #FFD700;
+  background:var(--bg-color);
   padding: 20px 30px;
   border-radius: 12px;
   display: flex;
@@ -531,7 +463,7 @@ main {
 .hero-banner-decake-award-title {
   font-size: 24px;
   font-weight: 700;
-  color: #2d2d2d;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -539,7 +471,7 @@ main {
 
 .hero-banner-decake-award-subtitle {
   font-size: 14px;
-  color: #333;
+  color: var(--text-color);
   font-weight: 500;
 }
 
@@ -595,6 +527,7 @@ main {
 
   .hero-banner-decake-buttons {
     flex-direction: column;
+    margin: auto;
   }
 
   .hero-banner-decake-btn {
@@ -642,10 +575,13 @@ main {
     font-size: 16px;
   }
 
+  
+
   .hero-banner-decake-btn {
     padding: 14px 28px;
     font-size: 15px;
   }
+  
 
   .hero-banner-decake-stats {
     flex-wrap: wrap;
@@ -2263,9 +2199,7 @@ form button:hover {
     gap: 15px;
   }
 
-  .container {
-    padding: 15px;
-  }
+  
 
   .home-hero h1 {
     font-size: 2rem;
@@ -2596,6 +2530,8 @@ form button:hover {
 
   .acerca-description {
     font-size: 0.95rem;
+    text-align: center;
+    padding: 0 5px;
   }
 
   .btn-mas-sobre {

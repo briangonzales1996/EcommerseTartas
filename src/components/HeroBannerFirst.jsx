@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from './Button'
 
 export default function HeroBannerFirst() {
     return (
@@ -23,12 +24,9 @@ export default function HeroBannerFirst() {
                     </p>
 
                     <div className="hero-banner-decake-buttons">
-                        <button className="hero-banner-decake-btn hero-banner-decake-btn-primary">
-                            🎂 Ver Productos
-                        </button>
-                        <button className="hero-banner-decake-btn hero-banner-decake-btn-secondary">
-                            📞 Contáctanos
-                        </button>
+                        <Button text={'🎂 Ver Productos'} url={"./productos"}/>
+                        <Button text={'📞 Contáctanos'} url={"./contacto"}/>
+                        
                     </div>
 
                     <div className="hero-banner-decake-stats">
