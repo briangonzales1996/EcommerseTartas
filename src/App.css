@@ -336,7 +336,7 @@ main {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public//tortaFondo.jpeg");
   background-position: center;
-  
+
 }
 
 .hero-banner-decake-container {
@@ -451,7 +451,7 @@ main {
   position: absolute;
   bottom: 30px;
   left: 30px;
-  background:var(--bg-color);
+  background: var(--bg-color);
   padding: 20px 30px;
   border-radius: 12px;
   display: flex;
@@ -475,151 +475,11 @@ main {
   font-weight: 500;
 }
 
-/* RESPONSIVE */
 
-@media (max-width: 1024px) {
-  .hero-banner-decake-container {
-    gap: 40px;
-  }
 
-  .hero-banner-decake-title {
-    font-size: 52px;
-  }
 
-  .hero-banner-decake-image {
-    height: 500px;
-  }
 
-  .hero-banner-decake-stats {
-    gap: 35px;
-  }
 
-  .hero-banner-decake-stat-number {
-    font-size: 36px;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-banner-decake {
-    padding: 60px 20px;
-  }
-
-  .hero-banner-decake-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .hero-banner-decake-content {
-    order: 1;
-  }
-
-  .hero-banner-decake-image-wrapper {
-    order: 2;
-  }
-
-  .hero-banner-decake-title {
-    font-size: 42px;
-  }
-
-  .hero-banner-decake-description {
-    font-size: 17px;
-  }
-
-  .hero-banner-decake-buttons {
-    flex-direction: column;
-    margin: auto;
-  }
-
-  .hero-banner-decake-btn {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .hero-banner-decake-stats {
-    gap: 30px;
-  }
-
-  .hero-banner-decake-stat-number {
-    font-size: 32px;
-  }
-
-  .hero-banner-decake-stat-label {
-    font-size: 14px;
-  }
-
-  .hero-banner-decake-image {
-    height: 450px;
-  }
-
-  .hero-banner-decake-award-badge {
-    bottom: 20px;
-    left: 20px;
-    padding: 15px 25px;
-  }
-
-  .hero-banner-decake-award-title {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-banner-decake {
-    padding: 50px 15px;
-  }
-
-  .hero-banner-decake-title {
-    font-size: 36px;
-  }
-
-  .hero-banner-decake-description {
-    font-size: 16px;
-  }
-
-  
-
-  .hero-banner-decake-btn {
-    padding: 14px 28px;
-    font-size: 15px;
-  }
-  
-
-  .hero-banner-decake-stats {
-    flex-wrap: wrap;
-    gap: 25px;
-  }
-
-  .hero-banner-decake-stat-item {
-    flex: 1;
-    min-width: 100px;
-  }
-
-  .hero-banner-decake-stat-number {
-    font-size: 28px;
-  }
-
-  .hero-banner-decake-stat-label {
-    font-size: 13px;
-  }
-
-  .hero-banner-decake-image {
-    height: 400px;
-  }
-
-  .hero-banner-decake-award-badge {
-    bottom: 15px;
-    left: 15px;
-    padding: 12px 20px;
-  }
-
-  .hero-banner-decake-award-title {
-    font-size: 18px;
-    gap: 8px;
-  }
-
-  .hero-banner-decake-award-subtitle {
-    font-size: 12px;
-  }
-}
 
 
 
@@ -1272,7 +1132,7 @@ form button:hover {
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   font-weight: 700;
-  color:var(--primary-color);
+  color: var(--primary-color);
   margin-bottom: 15px;
   letter-spacing: -0.5px;
 }
@@ -2121,6 +1981,31 @@ form button:hover {
 /* RESPONSIVE */
 @media (max-width: 1024px) {
 
+  /*Responsive Hero Banner background main first */
+  .hero-banner-decake-container {
+    gap: 40px;
+  }
+
+  .hero-banner-decake-title {
+    font-size: 52px;
+  }
+
+  .hero-banner-decake-image {
+    height: 500px;
+  }
+
+  .hero-banner-decake-stats {
+    gap: 35px;
+  }
+
+  .hero-banner-decake-stat-number {
+    font-size: 36px;
+  }
+
+
+
+
+
   /* CSS Contact Home responsive */
   .contact-home-container {
     grid-template-columns: 1fr;
@@ -2194,12 +2079,77 @@ form button:hover {
 
 /* Responsivo general*/
 @media (max-width: 768px) {
+
+  /*Responsive Hero Banner background main first */
+  .hero-banner-decake {
+    padding: 60px 20px;
+  }
+
+  .hero-banner-decake-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-banner-decake-content {
+    order: 1;
+  }
+
+  .hero-banner-decake-image-wrapper {
+    order: 2;
+  }
+
+  .hero-banner-decake-title {
+    font-size: 42px;
+  }
+
+  .hero-banner-decake-description {
+    font-size: 17px;
+  }
+
+  .hero-banner-decake-buttons {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .hero-banner-decake-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-banner-decake-stats {
+    gap: 30px;
+  }
+
+  .hero-banner-decake-stat-number {
+    font-size: 32px;
+  }
+
+  .hero-banner-decake-stat-label {
+    font-size: 14px;
+  }
+
+  .hero-banner-decake-image {
+    height: 450px;
+  }
+
+  .hero-banner-decake-award-badge {
+    bottom: 20px;
+    left: 20px;
+    padding: 15px 25px;
+  }
+
+  .hero-banner-decake-award-title {
+    font-size: 20px;
+  }
+
+
+
   nav ul {
     flex-direction: column;
     gap: 15px;
   }
 
-  
+
 
   .home-hero h1 {
     font-size: 2rem;
@@ -2236,7 +2186,7 @@ form button:hover {
     max-width: 90vw;
   }
 
-   /*CSS Feedback*/
+  /*CSS Feedback*/
   .testimonials-section {
     padding: 60px 15px;
   }
@@ -2415,7 +2365,65 @@ form button:hover {
 
 
 @media (max-width: 480px) {
+  /*Responsive Hero Banner background main first */
+    .hero-banner-decake {
+    padding: 50px 15px;
+  }
 
+  .hero-banner-decake-title {
+    font-size: 32px;
+  }
+
+  .hero-banner-decake-description {
+    font-size: 16px;
+  }
+
+
+
+  .hero-banner-decake-btn {
+    padding: 14px 28px;
+    font-size: 15px;
+  }
+
+
+  .hero-banner-decake-stats {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .hero-banner-decake-stat-item {
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .hero-banner-decake-stat-number {
+    font-size: 28px;
+  }
+
+  .hero-banner-decake-stat-label {
+    font-size: 13px;
+  }
+
+  .hero-banner-decake-image {
+    height: 400px;
+  }
+
+  .hero-banner-decake-award-badge {
+    bottom: 15px;
+    left: 15px;
+    padding: 12px 20px;
+  }
+
+  .hero-banner-decake-award-title {
+    font-size: 18px;
+    gap: 8px;
+  }
+
+  .hero-banner-decake-award-subtitle {
+    font-size: 12px;
+  }
+
+  /*Css header top*/
   .containerTopHeader {
     gap: 50px;
     justify-content: flex-start;
