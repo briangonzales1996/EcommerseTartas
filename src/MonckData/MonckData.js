@@ -27,6 +27,12 @@ const products = [
     { id: 24,carrousel:true, name: 'Boda con rosas salmon', category: "boda", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
     { id: 25,carrousel:false, name: 'Tarta para cumpleaños', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
     { id: 26,carrousel:false, name: 'Tarta personalizada de Dragon Ball', category: "cumpleaños", description: 'Hecha a tu medida.', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 27,carrousel:false, name: 'Tarta de coco', category: "boda", description: 'Tarta de coco de 3 tortas para boda con rosetas para 70 personas', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 28,carrousel:false, name: 'Torta cuadrada color verde', category: "bautismo", description: 'Tarta cuadrada para bautismo con fuente y 9 tortas para 300 personas color verde', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 29,carrousel:false, name: 'Torta cuadrada color rojo', category: "boda", description: 'Tarta cuadrada para boda con fuente y 9 tortas para 150 personas', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 30,carrousel:false, name: 'Tarta personalizada con arandanos', category: "cumpleaños", description: 'Tarta familiar con arandanos para 20 personas', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    { id: 31,carrousel:false, name: 'Tarta de coco con flores', category: "boda", description: 'Tarta para 70 personas de coco', image: '../../public/tartas/bolivar-escudo.jpeg' },
+    
 
 // Agrega más productos aquí
 ];
