@@ -9,6 +9,8 @@ import ContactAplication from "../components/ContactAplication";
 import TestimonialsSlider from "../components/TestimonialsSlider";
 import HeroBannerFirst from "../components/HeroBannerFirst";
 
+
+
 const urlNumber = 'https://wa.me/34611523675'
 const urlNumber2 = 'https://wa.me/541132480408'
 const frameSpanish = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1277.8501930976279!2d-3.7057869182403413!3d40.3809944894838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4227ad9fee9ed3%3A0x501e18cd834ef3d2!2sC.%20Antonio%20Velasco%20Zazo%20%26%20C.%20de%20Nicol%C3%A1s%20S%C3%A1nchez%2C%20Usera%2C%2028026%20Madrid!5e0!3m2!1ses!2ses!4v1762639651892!5m2!1ses!2ses'
@@ -38,7 +40,6 @@ function Home() {
 
     <HeroBannerFirst/>
 
-    
     
 
     <Servicios textColor={'#f8b4c4'} backGround={'#262626'}/>

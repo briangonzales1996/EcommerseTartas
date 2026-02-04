@@ -50,7 +50,7 @@ export default function HeroBannerFirst() {
                 {/* Imagen */}
                 <div className="hero-banner-decake-image-wrapper">
                     <img
-                        src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=800&h=600&fit=crop"
+                        src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/f8b97977-36f1-4feb-9008-afa91d790a00/Derivates/5beaac72-3441-4c7d-861c-195437f5861d.jpg"
                         alt="Deliciosos pasteles artesanales"
                         className="hero-banner-decake-image"
                     />

@@ -2706,6 +2706,15 @@ form button:hover {
     font-size: 1rem;
   }
 
+  /*Categiry products Items filter*/
+  .category-filter-container{
+    flex-wrap: nowrap;
+    /* 1. Permitir el movimiento */
+  overflow-y: auto; 
+  /* 2. Ocultar en Firefox */
+  scrollbar-width: none;
+  }
+
   /*css footer responsive*/
   .footer {
     padding: 30px 15px 0;
