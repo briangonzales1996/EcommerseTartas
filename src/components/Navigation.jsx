@@ -10,7 +10,7 @@ export function Navigation() {
     const closeMenu = () => setIsMenuOpen(false);
 
     const handleClick = (e) => {
-      
+
         setnavigationClick(e.target.id);
     }
 
@@ -60,7 +60,19 @@ export function Navigation() {
                             </button>
                             <ul>
                                 <li><Link to="/" onClick={closeMenu}>Inicio</Link></li>
-                                <li><Link to="/productos" onClick={closeMenu}>Pasteles</Link></li>
+                                <li>
+                                    <Link to="/productos" onClick={closeMenu}>Pasteles</Link>
+                                    <div style={{ display: "flex",flexDirection:"column",gap:10 }}>
+                                        <i>Cumpleaños</i>
+                                        <i>Bodas</i>
+                                        <i>Bautismo</i>
+                                        <i>Mis 15</i>
+                                        <i>Aniversarios</i>
+                                        <i>Pesonalizada</i>
+                                    </div>
+
+                                </li>
+
                                 <li><Link to="/contacto" onClick={closeMenu}>Contacto</Link></li>
                                 <li><Link to="/acerca" onClick={closeMenu}>Nosotros</Link></li>
                             </ul>

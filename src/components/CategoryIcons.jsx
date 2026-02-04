@@ -63,7 +63,7 @@ const categorias = [
   },
   {
     id: 6,
-    nombre: 'Especiales',
+    nombre: 'Personalizada',
     icon: (
       <div className='svg-icons' >
           <BsFillGiftFill/>
