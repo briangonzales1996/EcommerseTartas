@@ -3,8 +3,17 @@ import useOnScreen from '../hooks/useOnScreen';
 import { Button } from './Button';
 import TitleAnimation from './TitleAnimation';
 import { useNavigate } from 'react-router-dom';
+import { BsCake2 } from "react-icons/bs";
+import { BsEmojiHeartEyes } from "react-icons/bs";
+import { PiBabyBold } from "react-icons/pi";
+import { BsFillGiftFill } from "react-icons/bs";
+import { BsPersonStandingDress } from "react-icons/bs";
+import { IoWineSharp } from "react-icons/io5";
+
+
 const colorCategoryIcon = "#4a4a4a";
 const colorFondIcon = "#f0f0f0";
+const size = 20;
 
 const categorias = [
   {
@@ -12,7 +21,7 @@ const categorias = [
     nombre: 'Cumpleaños',
     icon: (
       <div className='svg-icons' >
-          <p>🎂</p>
+          <BsCake2/>
       </div>
     ),
   },
@@ -21,7 +30,7 @@ const categorias = [
     nombre: 'Bodas',
     icon: (
        <div className='svg-icons' >
-          <p>🤵👰</p>
+          <BsEmojiHeartEyes/>
       </div>
     ),
   },
@@ -30,7 +39,7 @@ const categorias = [
     nombre: 'Bautismos',
     icon: (
       <div className='svg-icons' >
-          <p>👼</p>
+          <PiBabyBold/>
       </div>
     ),
   },
@@ -39,7 +48,7 @@ const categorias = [
     nombre: 'Aniversarios',
     icon: (
       <div className='svg-icons' >
-          <p>🎉</p>
+          <IoWineSharp/>
       </div>
     ),
   },
@@ -48,16 +57,16 @@ const categorias = [
     nombre: 'Mis 15 años',
     icon: (
       <div className='svg-icons' >
-          <p>💃</p>
+          <BsPersonStandingDress/>
       </div>
     ),
   },
   {
     id: 6,
-    nombre: 'Festivos',
+    nombre: 'Especiales',
     icon: (
       <div className='svg-icons' >
-          <p>🎃</p>
+          <BsFillGiftFill/>
       </div>
     ),
   },

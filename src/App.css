@@ -877,9 +877,11 @@ form button:hover {
   border-radius: 2px;
 }
 
-.svg-icons>p {
+.svg-icons{
   font-size: 80px;
 }
+
+
 
 
 .item-a-animar {
@@ -2636,9 +2638,7 @@ form button:hover {
     font-size: 50px;
   }
 
-  .svg-icons>p {
-    font-size: 50px;
-  }
+  
 
   .product-card {
     padding: 15px;
