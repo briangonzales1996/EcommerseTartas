@@ -5,6 +5,8 @@ import { CategoryItems } from '../components/CategoryItems.jsx';
 
 import { orderImage } from '../MonckData/MonckData.js';
 import TextMarquee from '../components/TextMarquee.jsx';
+import { useContext } from 'react';
+import { ContextCreate } from '../Context/MyContext.jsx';
 //console.log(newProducts)
 
 
@@ -19,10 +21,13 @@ import TextMarquee from '../components/TextMarquee.jsx';
 
 
 function Products() {
+    const { selectCategory,setSelectCategory } = useContext(ContextCreate);
+
+
     const [modalOpen, setModalOpen] = useState(false);
     const [startIndex, setStartIndex] = useState(0);
     const [data, setData] = useState([]);
-    const [selectCategory, setSelectCategory] = useState('')
+    
     let images = []
 
 

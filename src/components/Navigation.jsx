@@ -1,18 +1,45 @@
-import { Link } from 'react-router-dom';
-import { use, useState } from 'react';
-import React from 'react'
+import { Link ,useNavigate} from 'react-router-dom';
+import { useState } from 'react';
+
 import TopHeader from './TopHeader';
 import logo from "../../public/caligrafia.png"
+import { useContext } from 'react';
+import { ContextCreate } from '../Context/MyContext';
+
+
+
+
+const dataLi =  [
+    
+    { id: 1, name: 'Ver todo',category:'' },
+    { id: 2, name: 'Cumpleaños',category:'cumpleaños' },
+    { id: 3, name: 'Bodas',category:'boda' },
+    { id: 5, name: 'Mis 15 años',category:'15años'},
+    { id: 6, name: 'Aniversario',category:'aniversario'},
+    { id: 7, name: 'Personalizada',category:'personalizada'},
+    
+];
+
+
+
 export function Navigation() {
+    const { selectCategory,setSelectCategory } = useContext(ContextCreate);
+    const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [navigationClick, setnavigationClick] = useState('');
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const closeMenu = () => setIsMenuOpen(false);
 
     const handleClick = (e) => {
-
         setnavigationClick(e.target.id);
     }
+
+    const handleCategorySelect = (item) =>{
+        navigate("./productos")
+        setSelectCategory(item.category);
+    }
+
+    
 
     return (
         <>
@@ -63,12 +90,13 @@ export function Navigation() {
                                 <li>
                                     <Link to="/productos" onClick={closeMenu}>Pasteles</Link>
                                     <div style={{ display: "flex",flexDirection:"column",gap:10 }}>
-                                        <i>Cumpleaños</i>
-                                        <i>Bodas</i>
-                                        <i>Bautismo</i>
-                                        <i>Mis 15</i>
-                                        <i>Aniversarios</i>
-                                        <i>Pesonalizada</i>
+                                        {
+                                            dataLi.map(item=>(
+                                                <i onClick={()=>handleCategorySelect(item)} key={item.id}>{item.name}</i>
+                                            ))
+                                        }
+                                        
+                        
                                     </div>
 
                                 </li>

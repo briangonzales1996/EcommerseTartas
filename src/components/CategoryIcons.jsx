@@ -3,6 +3,7 @@ import useOnScreen from '../hooks/useOnScreen';
 import { Button } from './Button';
 import TitleAnimation from './TitleAnimation';
 import { useNavigate } from 'react-router-dom';
+
 import { BsCake2 } from "react-icons/bs";
 import { BsEmojiHeartEyes } from "react-icons/bs";
 import { PiBabyBold } from "react-icons/pi";
@@ -13,7 +14,6 @@ import { IoWineSharp } from "react-icons/io5";
 
 const colorCategoryIcon = "#4a4a4a";
 const colorFondIcon = "#f0f0f0";
-const size = 20;
 
 const categorias = [
   {

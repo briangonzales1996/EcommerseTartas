@@ -11,16 +11,20 @@ import About from './pages/About.jsx';
 import CurtainLoader from './components/CurtainLoader.jsx';
 
 
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+
+  
       <Router>
         
           
           <Header />
 
+          
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
