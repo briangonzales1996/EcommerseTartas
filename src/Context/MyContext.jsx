@@ -7,10 +7,12 @@ export const ContextCreate = createContext();
 export const ContextProvider = ({ children }) => {
     
     const [selectCategory, setSelectCategory] = useState('')
+    const [selected, setSelected] = useState(1);
+
 
 
     return (
-        <ContextCreate.Provider value={{ selectCategory,setSelectCategory }}>
+        <ContextCreate.Provider value={{ selectCategory,setSelectCategory,selected,setSelected }}>
             {children}
         </ContextCreate.Provider>
     );

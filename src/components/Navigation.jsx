@@ -23,7 +23,7 @@ const dataLi =  [
 
 
 export function Navigation() {
-    const { selectCategory,setSelectCategory } = useContext(ContextCreate);
+    const { selectCategory,setSelectCategory,setSelected } = useContext(ContextCreate);
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [navigationClick, setnavigationClick] = useState('');
@@ -36,7 +36,9 @@ export function Navigation() {
 
     const handleCategorySelect = (item) =>{
         navigate("./productos")
+        setIsMenuOpen(false)
         setSelectCategory(item.category);
+        setSelected(item.id)
     }
 
     

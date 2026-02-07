@@ -1,12 +1,8 @@
 import React from 'react'
-import { BsCake2 } from "react-icons/bs";
-import { BsEmojiHeartEyes } from "react-icons/bs";
-import { PiBabyBold } from "react-icons/pi";
-import { BsFillGiftFill } from "react-icons/bs";
-import { BsPersonStandingDress } from "react-icons/bs";
-import { IoWineSharp } from "react-icons/io5";
-import { useState } from 'react';
 
+import { useState } from 'react';
+import { useContext } from 'react';
+import { ContextCreate } from '../Context/MyContext';
 const categoriesData = [
     
     { id: 1, name: 'Ver todo',category:'', icon: '⟳' },
@@ -20,7 +16,8 @@ const categoriesData = [
 
 export function CategoryItems({setCategory}) {
     
-     const [selected, setSelected] = useState(1);
+    
+    const { selected, setSelected } = useContext(ContextCreate);
 
     const handleClick = (id,typeCategory) => {
         setSelected(id);
