@@ -141,7 +141,7 @@ h3 {
 
 .containerCaligrafia {
   width: 230px;
-
+  margin-top: 15px;
 }
 
 .containerCaligrafia>img {
@@ -2430,7 +2430,7 @@ form button:hover {
     gap: 50px;
     justify-content: flex-start;
     background-color: var(--bg-color);
-    padding: 10px;
+    padding: 5px;
   }
 
   .containerTopHeader>.containerLogoText {
@@ -2442,7 +2442,7 @@ form button:hover {
   }
 
   .containerLogoText {
-    width: 70px;
+    width: 60px;
     height: auto;
   }
 
